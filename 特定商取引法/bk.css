@@ -1,0 +1,128 @@
+@media screen and (min-width: 600px) {
+        /*
+    ==============================
+    title__box
+    ==============================
+    */
+
+    .title__box{
+        margin: 70px auto 0;
+        width: 660px;
+    }
+
+    .title__box p{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    caption
+    ==============================
+    */
+
+    .caption{
+        margin: 70px auto 0;
+        width: 660px;
+    }
+
+    .caption p{
+        font-size: 1.6rem;
+    }
+
+    /*
+    ==============================
+    contents__box
+    ==============================
+    */
+
+    .contents__box{
+        margin: 70px auto 0;
+        width: 660px;
+    }
+
+    .contents__box ul{
+    }
+
+    .contents__box ul li{
+        margin: 40px 0 0;
+        padding: 0 0 40px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    .contents__box ul li p.title{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .contents__box ul li p.line{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        line-height: 1.75em;
+    }
+}
+
+@media screen and (max-width : 599px) {
+        /*
+    ==============================
+    title__box
+    ==============================
+    */
+
+    .title__box{
+        margin: 40px auto 0;
+        width: 93%;
+    }
+
+    .title__box p{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    caption
+    ==============================
+    */
+
+    .caption{
+        margin: 40px auto 0;
+        width: 93%;
+    }
+
+    .caption p{
+        font-size: 1.6rem;
+    }
+
+    /*
+    ==============================
+    contents__box
+    ==============================
+    */
+
+    .contents__box{
+        margin: 40px auto 0;
+        width: 93%;
+    }
+
+    .contents__box ul{
+    }
+
+    .contents__box ul li{
+        margin: 40px 0 0;
+        padding: 0 0 40px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    .contents__box ul li p.title{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .contents__box ul li p.line{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        line-height: 1.75em;
+    }
+}
+

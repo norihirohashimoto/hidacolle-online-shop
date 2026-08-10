@@ -1,0 +1,121 @@
+@media screen and (min-width: 600px) {
+        /*
+    ==============================
+    title_box
+    ==============================
+    */
+
+    .title_box{
+        margin: 160px auto 0;
+        width: 660px;
+    }
+
+    .title_box h1{
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    .title_box .caption{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    note_contetns
+    ==============================
+    */
+
+    .note_contetns{
+        margin: 40px auto 0;
+        width: 660px;
+    }
+
+    .note_contetns img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .note_contetns p.caption{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .note_contetns h2{
+        margin: 40px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .note_contetns p.line{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+}
+
+@media screen and (max-width : 599px) {
+    /*
+    ==============================
+    title_box
+    ==============================
+    */
+
+    .title_box{
+        margin: 0 auto;
+        padding: 40px 0 0;
+        width: 93%;
+    }
+
+    .title_box h1{
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    .title_box .caption{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    note_contetns
+    ==============================
+    */
+
+    .note_contetns{
+        margin: 0 auto;
+        padding: 40px 0 0;
+        width: 93%;
+    }
+
+    .note_contetns img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .note_contetns p.caption{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .note_contetns h2{
+        margin: 40px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .note_contetns p.line{
+        margin: 10px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+}

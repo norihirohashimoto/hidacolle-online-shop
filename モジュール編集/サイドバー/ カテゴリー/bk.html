@@ -1,0 +1,134 @@
+<nav class="modules_side_categories">
+
+    <!-- <div class="banner"><a href="/view/category/solidwoodtable"><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/sidebar/2025-solidwoodtable-2.jpg" alt="一枚板テーブル展"></a></div> -->
+    
+    <ul class="first_lists">
+        <{section name=i loop=$category_menu.list}>
+
+            <{if $category_menu.list[i].code == "original-product" || $category_menu.list[i].code == "hida-chair" || $category_menu.list[i].code == "order_tables_online" || $category_menu.list[i].code == "hida-crafts"}>
+
+                <!-- <p><{$category_menu.list[i].code}></p> -->
+
+                <li class="first_item">
+                    <{if $category_menu.list[i].code == "original-product"}>
+                        <div class="first_head">
+                            <p class="en">Original product</p>
+                            <p class="ja">こんな家具のある暮らし</p>
+                        </div>
+                    <{/if}>
+                    <{if $category_menu.list[i].code == "hida-chair"}>
+                        <div class="first_head">
+                            <p class="en">Chair & stool</p>
+                            <p class="ja">飛騨の椅子</p>
+                        </div>
+                    <{/if}>
+                    <{if $category_menu.list[i].code == "order_tables_online"}>
+                        <div class="first_head">
+                            <p class="en">Easy order table</p>
+                            <p class="ja">オーダーテーブルをネットで</p>
+                        </div>
+                    <{/if}>
+                    <{if $category_menu.list[i].code == "hida-crafts"}>
+                        <div class="first_head">
+                            <p class="en">Handcraft of Hida</p>
+                            <p class="ja">飛騨の手仕事</p>
+                        </div>
+                    <{/if}>
+
+
+                    <{if $category_menu.list[i].code == "order_tables_online"}>
+                        <ul class="second_lists">
+                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/category/boards-order_tables_online">選べる天板</a></li>
+                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/category/legs-order_tables_online">選べる脚</a></li>
+                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/category/options-order_tables_online">オプション</a></li>
+                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/page/costum-order">カスタムオーダー</a></li>
+                        </ul>
+                    <{elseif $category_menu.list[i].code == "hida-chair"}>
+                        <ul class="second_lists">
+                            <li class="second_item"><a class="item" href="/view/category/rams">RAMSチェア</a></li>
+                            <li class="second_item"><a class="item" href="/view/item/000000000160">AUDチェア</a></li>
+                            <li class="second_item"><a class="item" href="/view/item/000000000161">Motherチェア</a></li>
+                            <li class="second_item"><a class="item" href="/view/category/chair-stool-kurumi">クルミの椅子</a></li>
+                            <li class="second_item"><a class="item" href="/view/category/chair-stool-triple">3連スツール</a></li>
+                        </ul>
+                    <{else}>
+                        <ul class="second_lists">
+                            <{section name=j loop=$category_menu.list[i].child_category.list}>
+                                <{if $category_menu.list[i].child_category.list[j].child_category.has_item}>
+                                    <li class="second_item has_item">
+                                        <a class="second_head" href="<{$category_menu.list[i].child_category.list[j].url}>"><{$category_menu.list[i].child_category.list[j].name}></a>
+
+                                        <ul class="third_lists">
+                                            <{section name=k loop=$category_menu.list[i].child_category.list[j].child_category.list}>
+                                                <li class="third_item">
+                                                    <a class="item" href="<{$category_menu.list[i].child_category.list[j].child_category.list[k].url}>"><{$category_menu.list[i].child_category.list[j].child_category.list[k].name}></a>
+                                                </li>
+                                            <{/section}>
+                                        </ul>
+                                    </li>
+                                    <{else}>
+                                        <li class="second_item">
+                                            <a class="item" href="<{$category_menu.list[i].child_category.list[j].url}>"><{$category_menu.list[i].child_category.list[j].name}></a>
+                                        </li>
+                                <{/if}>
+                            <{/section}>
+                        </ul>
+                    <{/if}>
+                </li>
+            <{/if}>
+        <{/section}>
+    </ul>
+</nav>
+
+<!-- <nav class="modules_side_categories">
+    <ul>
+        <li class="first">
+            <p class="title">[推し] こんな家具のある暮らし</p>
+            <ul>
+                <li><a href="/view/item/000000000100"><p>コンソールデスク W950</p></a></li>
+                <li><a href="/view/item/000000000103"><p>ハンガーラック X型</p></a></li>
+                <li><a href="/view/item/000000000101"><p>アイアンシェルフ B</p></a></li>
+                <li><a href="/view/item/000000000148"><p>桐箱</p></a></li>
+            </ul>
+        </li>
+        <{section name=i loop=$category_menu.list}>
+            <{if $category_menu.list[i].child_category.has_item}>
+
+                <{if $category_menu.list[i].code == "ct88"}>
+                <{elseif $category_menu.list[i].code == "ct81"}>
+
+                <{else}>
+                    <li class="first">
+                        <{if $category_menu.list[i].code == "hida-crafts"}>
+                            <a href="<{$category_menu.list[i].url}>">
+                                <p class="title title_crafts"><{$category_menu.list[i].name}></p>
+                            </a>
+                        <{elseif $category_menu.list[i].code == "order_tables_online"}>
+                            <p class="title"><{$category_menu.list[i].name}></p>
+                            <ul>
+                                <{section name=j loop=$category_menu.list[i].child_category.list}>
+                                    <li>
+                                        <a href="<{$category_menu.list[i].child_category.list[j].url}>">
+                                            <p><{$category_menu.list[i].child_category.list[j].name}></p>
+                                        </a>
+                                    </li>
+                                <{/section}>
+                            </ul>
+                        <{else}>
+                            <p class="title"><{$category_menu.list[i].name}></p>
+                            <ul>
+                                <{section name=j loop=$category_menu.list[i].child_category.list}>
+                                    <li>
+                                        <a href="<{$category_menu.list[i].child_category.list[j].url}>">
+                                            <p><{$category_menu.list[i].child_category.list[j].name}></p>
+                                        </a>
+                                    </li>
+                                <{/section}>
+                            </ul>
+                        <{/if}>
+                    </li>
+                <{/if}>
+            <{/if}>
+        <{/section}>
+    </ul>
+</nav> -->

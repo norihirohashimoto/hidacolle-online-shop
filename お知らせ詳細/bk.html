@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+<meta charset="utf-8">
+<title><{$page.title}></title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="飛騨,HIDA,家具,国産家具,オーダー家具,手仕事,クラフト,雑貨,ヒダコレ,高山" lang="ja">
+<meta name="description" content="<{$page.description}>">
+<link rel="shortcut icon" type="image/ico" href="<{$shop.favicon_url}>">
+<meta property="og:title" content="<{$page.title}>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<{$page.title}>">
+<meta property="og:description" content="<{$page.description}>">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Module / Common head -->
+<{$module.common_head}>
+
+<!-- Module / CSS -->
+<{$module.common_css}>
+
+<{$makeshop.head}>
+</head>
+
+<body id="<{$page.id}>">
+
+    <!-- Module / Common body -->
+    <{$module.common_body}>
+
+    <{$makeshop.body_top}>
+
+    <!-- Module / floating_button -->
+    <{$module.floating_button}>
+
+    <!-- Module / Header -->
+    <{$module.header}>
+
+    <!-- Module / SP Drawer -->
+    <{$module.sp_drawer}>
+
+    <!-- Module / SP Header -->
+    <{$module.sp_header}>
+
+    <div class="contents_body">
+
+        <div class="title_box">
+            <h1><{$page.title}></h1>
+            <p class="news-list-date"><{$news.date.year}> / <{$news.date.month}> / <{$news.date.day}></p>
+            <!-- <p class="caption">2022年ゴールデンウィークに一枚板セールを開催いたします。</p> -->
+        </div>
+
+        <div class="note_contetns">
+            <!-- <img src="https://gigaplus.makeshop.jp/hcollection/freepage/note/images/220420_01.jpg"> -->
+            <p class="line"><{$news.content}></p>
+        </div>
+
+        <!-- Module / Footer -->
+        <{$module.footer}>
+
+    </div>
+
+    <!-- Module / Javascript -->
+    <{$module.common_js}>
+
+    <{$makeshop.body_bottom}>
+
+</body>
+</html>

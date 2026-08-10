@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <title><{$page.title}></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="飛騨,HIDA,家具,国産家具,オーダー家具,手仕事,クラフト,雑貨,ヒダコレ,高山" lang="ja">
+    <meta name="description" content="<{$page.description}>">
+    <link rel="shortcut icon" type="image/ico" href="<{$shop.favicon_url}>">
+    <meta property="og:title" content="<{$page.title}>">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="<{$page.title}>">
+    <meta property="og:description" content="<{$page.description}>">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://www.hida-collection.shop<{$item.url}>">
+
+    <!-- Module / Common head -->
+    <{$module.common_head}>
+
+    <!-- Module / CSS -->
+    <{$module.common_css}>
+
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <script>
+
+        function MakeShop_afterCartEntry(data){
+            console.log("商品詳細画面からカゴに入れた直後に実行");
+
+            console.log(data);
+
+            // window.dataLayer = window.dataLayer || [];
+            // dataLayer.push({ ecommerce: null });
+            // dataLayer.push({
+            // event: "add_to_cart",
+            // ecommerce: {
+            //     items: [{
+            //         item_name: "<{$item.name}>",
+            //         item_id: "<{$item.system_code}>",
+            //         price: "<{$item.price}>",
+            //         item_category: "<{$item.base_category.name}>",
+            //         quantity: 1
+            //     }]
+            // }
+            // });
+
+            // return false;
+        }
+
+        
+    </script>
+
+    <{$makeshop.head}>
+</head>
+
+<body id="<{$page.id}>">
+
+    <!-- Module / Common body -->
+    <{$module.common_body}>
+
+    <{$makeshop.body_top}>
+
+    <!-- Module / floating_button -->
+    <{$module.floating_button}>
+
+    <!-- Module / Header -->
+    <{$module.header}>
+
+    <!-- Module / SP Drawer -->
+    <{$module.sp_drawer}>
+
+    <!-- Module / SP Header -->
+    <{$module.sp_header}>
+
+    <div class="contents_body">
+
+        <!-- <{if $item.breadcrumb_list_group.has_item}>
+            <div class="breadcrumb_navigation_box">
+                <{section name=i loop=$item.breadcrumb_list_group.list}>
+                    <{if $item.breadcrumb_list_group.list[i].has_item}>
+                        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="<{$url.top}>"><span itemprop="name">ホーム</span></a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <{section name=j loop=$item.breadcrumb_list_group.list[i].list}>
+                                <{if $item.breadcrumb_list_group.list[i].list[j].name != "[非表示中] ヒダコレの暮らしカテゴリー" && $item.breadcrumb_list_group.list[i].list[j].name != "[非表示中] ヒダコレのアイテムから探す"}>
+                                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                        <a itemprop="item" href="<{$item.breadcrumb_list_group.list[i].list[j].url}>"><span itemprop="name"><{$item.breadcrumb_list_group.list[i].list[j].name}></span></a>
+                                        <meta itemprop="position" content="2" />
+                                    </li>
+                                <{/if}>
+                            <{/section}>
+                        </ol>
+                    <{/if}>
+                <{/section}>
+            </div>
+        <{/if}> -->
+
+        <div class="layout__box">
+            <div class="left_contents sidebar">
+
+                <p class="caption">飛騨の家具や工芸をみる</p>
+
+                <{if $item.system_code == '000000000154'}>
+                <!-- Dev -->
+                <nav class="modules_side_categories">
+                    <ul class="first_lists">
+                        <{section name=i loop=$category_menu.list}>
+
+                            <{if $category_menu.list[i].code == "ct88" || $category_menu.list[i].code == "ct81" || $category_menu.list[i].code == "order_tables_online" || $category_menu.list[i].code == "hida-crafts"}>
+
+                                <!-- <p><{$category_menu.list[i].code}></p> -->
+
+                                <li class="first_item">
+                                    <{if $category_menu.list[i].code == "ct88"}>
+                                        <div class="first_head">
+                                            <p class="en">Original product</p>
+                                            <p class="ja">こんな家具のある暮らし</p>
+                                        </div>
+                                    <{/if}>
+                                    <{if $category_menu.list[i].code == "ct81"}>
+                                        <div class="first_head">
+                                            <p class="en">Chair & stool</p>
+                                            <p class="ja">飛騨の椅子</p>
+                                        </div>
+                                    <{/if}>
+                                    <{if $category_menu.list[i].code == "order_tables_online"}>
+                                        <div class="first_head">
+                                            <p class="en">Easy order table</p>
+                                            <p class="ja">オーダーテーブルをネットで</p>
+                                        </div>
+                                    <{/if}>
+                                    <{if $category_menu.list[i].code == "hida-crafts"}>
+                                        <div class="first_head">
+                                            <p class="en">Handcraft of Hida</p>
+                                            <p class="ja">飛騨の手仕事</p>
+                                        </div>
+                                    <{/if}>
+
+
+                                    <{if $category_menu.list[i].code == "order_tables_online"}>
+                                        <ul class="second_lists">
+                                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/category/boards-order_tables_online">選べる天板</a></li>
+                                            <li class="second_item"><a class="item" href=https://hida-collection.shop/view/category/legs-order_tables_online">選べる脚</a></li>
+                                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/category/options-order_tables_online">オプション</a></li>
+                                            <li class="second_item"><a class="item" href="https://hida-collection.shop/view/page/costum-order">カスタムオーダー</a></li>
+                                        </ul>
+                                    <{elseif $category_menu.list[i].code == "ct81"}>
+                                        <ul class="second_lists">
+                                            <li class="second_item"><a class="item" href="/view/category/rams">RAMSチェア</a></li>
+                                            <li class="second_item"><a class="item" href="/view/item/000000000160">AUDチェア</a></li>
+                                            <li class="second_item"><a class="item" href="/view/item/000000000161">Motherチェア</a></li>
+                                            <li class="second_item"><a class="item" href="/view/category/chair-stool-kurumi">クルミの椅子</a></li>
+                                            <li class="second_item"><a class="item" href="/view/category/chair-stool-triple">3連スツール</a></li>
+                                        </ul>
+                                    <{else}>
+                                        <ul class="second_lists">
+                                            <{section name=j loop=$category_menu.list[i].child_category.list}>
+                                                <{if $category_menu.list[i].child_category.list[j].child_category.has_item}>
+                                                    <li class="second_item has_item">
+                                                        <a class="second_head" href="<{$category_menu.list[i].child_category.list[j].url}>"><{$category_menu.list[i].child_category.list[j].name}></a>
+
+                                                        <ul class="third_lists">
+                                                            <{section name=k loop=$category_menu.list[i].child_category.list[j].child_category.list}>
+                                                                <li class="third_item">
+                                                                    <a class="item" href="<{$category_menu.list[i].child_category.list[j].child_category.list[k].url}>"><{$category_menu.list[i].child_category.list[j].child_category.list[k].name}></a>
+                                                                </li>
+                                                            <{/section}>
+                                                        </ul>
+                                                    </li>
+                                                    <{else}>
+                                                        <li class="second_item">
+                                                            <a class="item" href="<{$category_menu.list[i].child_category.list[j].url}>"><{$category_menu.list[i].child_category.list[j].name}></a>
+                                                        </li>
+                                                <{/if}>
+                                            <{/section}>
+                                        </ul>
+                                    <{/if}>
+                                </li>
+                            <{/if}>
+                        <{/section}>
+                    </ul>
+                </nav>
+                <{else}>
+                <!-- Module / Categories -->
+                <{$module.side_categories}>
+                <{/if}>
+            </div>
+            <div class="right_contents">
+
+                <div class="item_box">
+
+                    <div class="item_images">
+                        <!-- Slider main container -->
+                        <{if $item.multi_image.has_item}>
+                            <div class="slider-container">
+                                <div class="slider">
+                                    <{section name=i loop=$item.multi_image.list}>
+                                        <div data-thumb="<{$item.multi_image.list[i].image_L}>"><img src="<{$item.multi_image.list[i].image_L}>" class="item-image" alt="<{$item.name}>"></div>
+                                    <{/section}>
+                                </div>
+                            </div>
+                        <{else}>
+                            <div class="large"><img src="<{$item.image_L}>"></div>
+                        <{/if}>
+                    </div>
+
+                    <div class="item_data">
+                        <h1><{$item.name}></h1>
+
+                        <div class="add_js_data-tree_species_and_size"></div>
+
+                        <{if $item.system_code == '000000000154'}>
+
+                            <!-- 開発用 -->
+
+                            <{if $item.has_option}>
+                                <div class="item_option_box">
+                                    <span class="item_option_box-title"><{$item.option_sku.option1_label}></span>
+                                    <ul class="option-items">
+                                        <{section name=i loop=$item.option_sku.list}>
+                                            <li class="option-item">
+                                                <div class="option-title">
+                                                    <{if $item.option_sku.list[i.index_prev].name1 != $item.option_sku.list[i.index].name1}>
+                                                        <{$item.option_sku.list[i].name1}>
+                                                    <{/if}>
+                                                </div>
+                                                <div class="option-data">
+                                                    <div class="option-price"><{$item.option_sku.list[i].price|number_format}><span class="yen">円 (税込)</span></div>
+                                                    <{if $item.option_sku.list[i].is_soldout}>
+                                                        <p class="caption-restock">在庫がありません。</p>
+                                                    <{else}>
+                                                        <div class="option-quantity">
+                                                            <span>数量</span><input type="text" data-id="<{$item.quantity_id}>" value="1"><{if $item.option_sku.list[i].is_stock_unlimited == 0}><span class="stock_quantity">（在庫:<{$item.option_sku.list[i].stock_quantity}>）</span><{/if}>
+                                                        </div>
+                                                        <a class="button button-add_cart" href="<{$item.option_sku.list[i].cart_entry_url}>">カートに入れる</a>
+                                                    <{/if}>
+                                                </div>
+                                            </li>
+                                        <{/section}>
+                                    </ul>
+                                    <p class="option-caption">ご注文後一週間以内に発送致します。</p>
+                                </div>
+                            <{else}>
+                                <div class="price"><{$item.price_html}><span class="yen">円 (税込)</span></div>
+                                <div class="quantity">
+                                    <span>数量</span><input type="text" data-id="<{$item.quantity_id}>" value="1"><{if $item.is_stock_unlimited == 0}><span class="stock_quantity">（在庫:<{$item.stock_quantity}>）</span><{/if}>
+                                </div>
+                                <{if $item.is_soldout == 1}>
+                                    <!-- 在庫なし -->
+                                    <{if $item.is_restock_enabled == 1}>
+                                        <!-- 再入荷通知受け取り可能商品 -->
+                                        <p class="caption">在庫がありません。<br>再入荷しましたらすぐにご連絡差し上げます。</p>
+                                        <a class="button button-restock" href="<{$item.restock_url}>">再入荷通知を受け取る</a>
+                                    <{else}>
+                                        <p class="caption">在庫がありません。</p>
+                                        <!-- <a class="button button-add_cart" href="<{$item.restock_url}>">再入荷通知を受け取る</a> -->
+                                    <{/if}>
+                                <{else}>
+                                    <!-- 在庫あり -->
+                                    <p class="caption">ご注文後一週間以内に発送致します。</p>
+                                    <a class="button button-add_cart" href="<{$item.cart_entry_url}>">カートに入れる</a>
+                                    <{if $item.base_category.code == 'hida-crafts'}>
+                                        <div class="gift_wrapping">
+                                            <p>この商品はラッピング対応商品です。<br>ラッピング・のしをご希望の方は商品と<br>別途ラッピングをご購入ください。</p>
+                                            <div class="gift_wrapping--layout">
+                                                <a class="button button-gift_wrapping" href="/view/item/000000000120">ラッピングを追加</a>
+                                                <a class="button button-gift_wrapping" href="/view/item/000000000121">のしを追加</a>
+                                            </div>
+                                        </div>
+                                    <{/if}>
+                                <{/if}>
+                            <{/if}>
+
+                            <div class="other_products_box"><!-- Add js --></div>
+
+                        <{else}>
+
+                            <!-- 本番用 -->
+
+                            <{if $item.has_option}>
+                                <div class="item_option_box">
+                                    <span class="item_option_box-title"><{$item.option_sku.option1_label}></span>
+                                    <ul class="option-items">
+                                        <{section name=i loop=$item.option_sku.list}>
+                                            <li class="option-item">
+                                                <div class="option-title">
+                                                    <{if $item.option_sku.list[i.index_prev].name1 != $item.option_sku.list[i.index].name1}>
+                                                        <{$item.option_sku.list[i].name1}>
+                                                    <{/if}>
+                                                </div>
+                                                <div class="option-data">
+                                                    <div class="option-price"><{$item.option_sku.list[i].price|number_format}><span class="yen">円 (税込)</span></div>
+                                                    <{if $item.option_sku.list[i].is_soldout}>
+                                                        <p class="caption-restock">在庫がありません。</p>
+                                                    <{else}>
+                                                        <div class="option-quantity">
+                                                            <span>数量</span><input type="text" data-id="<{$item.quantity_id}>" value="1"><{if $item.option_sku.list[i].is_stock_unlimited == 0}><span class="stock_quantity">（在庫:<{$item.option_sku.list[i].stock_quantity}>）</span><{/if}>
+                                                        </div>
+                                                        <a class="button button-add_cart" href="<{$item.option_sku.list[i].cart_entry_url}>">カートに入れる</a>
+                                                    <{/if}>
+                                                </div>
+                                            </li>
+                                        <{/section}>
+                                    </ul>
+                                    <!-- <p class="option-caption">ご注文後一週間以内に発送致します。</p> -->
+                                </div>
+                            <{else}>
+                                <div class="price"><{$item.price_html}><span class="yen">円 (税込)</span></div>
+                                <div class="quantity">
+                                    <span>数量</span><input type="text" data-id="<{$item.quantity_id}>" value="1"><{if $item.is_stock_unlimited == 0}><span class="stock_quantity">（在庫:<{$item.stock_quantity}>）</span><{/if}>
+                                </div>
+                                <{if $item.is_soldout == 1}>
+                                    <!-- 在庫なし -->
+                                    <{if $item.is_restock_enabled == 1}>
+                                        <!-- 再入荷通知受け取り可能商品 -->
+                                        <p class="caption">在庫がありません。<br>再入荷しましたらすぐにご連絡差し上げます。</p>
+                                        <a class="button button-restock" href="<{$item.restock_url}>">再入荷通知を受け取る</a>
+                                    <{else}>
+                                        <p class="caption">在庫がありません。</p>
+                                        <!-- <a class="button button-add_cart" href="<{$item.restock_url}>">再入荷通知を受け取る</a> -->
+                                    <{/if}>
+                                <{else}>
+                                    <!-- 在庫あり -->
+                                    <!-- <p class="caption">ご注文後一週間以内に発送致します。</p> -->
+                                    <a class="button button-add_cart" href="<{$item.cart_entry_url}>">カートに入れる</a>
+                                    <{if $item.base_category.code == 'hida-crafts'}>
+                                        <div class="gift_wrapping">
+                                            <p>この商品はラッピング対応商品です。<br>ラッピング・のしをご希望の方は商品と<br>別途ラッピングをご購入ください。</p>
+                                            <div class="gift_wrapping--layout">
+                                                <a class="button button-gift_wrapping" href="/view/item/000000000120">ラッピングを追加</a>
+                                                <a class="button button-gift_wrapping" href="/view/item/000000000121">のしを追加</a>
+                                            </div>
+                                        </div>
+                                    <{/if}>
+                                <{/if}>
+                            <{/if}>
+
+                            <div class="other_products_box"><!-- Add js --></div>
+
+                        <{/if}>
+
+                        <!-- テスト -->
+                        <!-- 送料説明：<{$item.delivery_price_message}>
+                        在庫：<{$item.stock_quantity}>
+                        <p class="item-contact"><a href="<{$item.contact_url}>"><i class="fas fa-paper-plane"></i>この商品について問い合わせる</a></p> -->
+                        <!-- 送料 <{$item.delivery_price}> -->
+                    </div>
+
+                    <div class="add_js_data-furusato-tax"></div>
+
+                    <{if $item.base_category.code != 'hida-crafts' && $item.base_category.code != 'gift'}>
+                        <div class="order_box">
+                            <div class="title_box">
+                                <p>お店と工房。ヒダコレには2つの顔があります。</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p class="sub_title">サイズオーダー・別の樹種をご希望の方</p>
+                                    <a href="/view/page/tree-species">サイズオーダー・樹種のご相談はこちら</a>
+                                    <p class="line">オンラインショップでご案内しているオリジナルプロダクトから、更に「もう少しサイズを大きく(小さく)してほしい」「お部屋に合わせてもっと濃い色(違う樹種)で欲しい」などのご希望にもお応えできます。</p>
+                                </li>
+                                <li>
+                                    <p class="sub_title">「こんな家具があれば」とお思いの方</p>
+                                    <a href="/view/page/costum-order">カスタムオーダーのご相談はこちら</a>
+                                    <p class="line">既製品ではお部屋のサイズに合わない、違った機能や収納がほしいなどのご希望のお客様も、小さな棚板1枚からオーダーできます。<br>お気軽にご相談ください。</p>
+                                </li>
+                            </ul>
+                        </div>
+                    <{/if}>
+
+                    <div class="user__layout">
+                        <{if $item.system_code == '000000000148'}>
+                            <{$item.description}>
+                        <{elseif $item.system_code == '000000000150'}>
+                            <{$item.description}>
+                        <{elseif $item.system_code == '000000000151'}>
+                            <{$item.description}>
+                        <{elseif $item.system_code == '000000000152'}>
+                            <{$item.description}>
+                        <{elseif $item.system_code == '000000000154'}>
+                            <!-- <h1>テスト環境です | <{$item.description2}></h1> -->
+                            <{$item.description}>
+                        <{else}>
+                            <{if $item.base_category.code == 'hida-crafts'}>
+                                <div class="item_description">
+                                    <div class="description_block">
+                                        <p><{$item.description}></p>
+                                    </div>
+                                </div>
+                            <{else}>
+                                <{$item.description}>
+                            <{/if}>
+                        <{/if}>
+                    </div>
+                </div>
+
+                <{if $item.base_category.code != 'gift' && $item.group.has_item == 1}>
+                    <div class="category_items">
+                        <div class="title_box">
+                            <div class="line">よく一緒に見られているアイテム</div>
+                        </div>
+                        <ul>
+                            <{section name=i loop=$item.group.list max=6}>
+                                <li>
+                                    <!-- 商品一覧系『おすすめ』商品を表示 -->
+                                    <a href="<{$item.group.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$item.group.list[i].image_L}>" alt="<{$item.group.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$item.group.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$item.group.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{/if}>
+            </div>
+        </div>
+
+        <!-- Module / Footer -->
+        <{$module.footer}>
+
+    </div>
+
+    <!-- Module / Javascript -->
+    <{$module.common_js}>
+
+    <{if $item.system_code == '000000000154'}>
+
+        <!-- 開発 -->
+
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('.slider').slick({
+                    dots: true,
+                    fade: true,
+                    prevArrow: '<span class="prev-arrow">前へ</span>',
+                    nextArrow: '<span class="next-arrow">次へ</span>',
+                    customPaging: function(slider, i) {
+                        var thumbSrc = $(slider.$slides[i]).children('div').children('div').data('thumb');
+                        return '<img src="' + thumbSrc + '">';
+                    }
+                });
+
+                var json_makeshop = "<{$item.description2|escape:json}>";
+
+                // console.log(json_makeshop);
+
+                var result = "";
+                var obj = {
+                    "this_product" : {
+                        "delivery_schedule" : "",
+                        "tree_species" : "",
+                        "size" : ""
+                    },
+                    "other_products" : {
+                        "tree_species" : ""
+                    }
+                };
+
+                if(json_makeshop != ""){
+
+                    var json = JSON.parse(json_makeshop);
+
+                    // console.log(json["this_product"]["delivery_schedule"]);
+                    // console.log(json["this_product"]["size"]);
+                    // console.log(json["this_product"]["tree_species"]);
+
+                    // console.log(json["other_products"]);
+                    // console.log(json["other_products"]["tree_species"]["cherry"]);
+
+
+                    if (Object.keys(json["other_products"]["tree_species"]["cherry"]).length) {
+
+                        // console.log("空ではない時");
+
+                        obj.other_products.tree_species += "<p class='caption'>ヒダコレ オンラインショップでご用意している樹種以外に下記の樹種で家具をお作りできます。<br>お部屋の色に合わせた樹種でご用意できますので、ぜひご検討下さいませ。";
+                        obj.other_products.tree_species += "<ul>";
+
+                        for (var key in json["other_products"]["tree_species"]) {
+
+                            // console.log(key + ': ' + json["other_products"]["tree_species"][key]);
+
+                            var title = "";
+                            var price = Number(json["other_products"]["tree_species"][key]).toLocaleString();
+
+                            switch (key) {
+                            case 'nire':
+                                title = "ニレ"
+                                break;
+                            case 'tamo':
+                                title = "タモ"
+                                break;
+                            case 'kurumi':
+                                title = "クルミ"
+                                break;
+                            case 'kaba':
+                                title = "カバ"
+                                break;
+                            case 'nara':
+                                title = "ナラ"
+                                break;
+                            case 'cherry':
+                                title = "チェリー"
+                                break;
+                            case 'walnut':
+                                title = "ウォルナット"
+                                break;
+                            };
+
+                            if(price != "0"){
+                                obj.other_products.tree_species += "<li><p class='other_products-title'>" + title + "</p><p class='other_products-price'>" + price + "<span class='yen'>円</span></p></li>";
+                            }
+
+                        }
+
+                        obj.other_products.tree_species += "</ul>";
+                        obj.other_products.tree_species += "<a class='button' href='/view/page/tree-species'>樹種の特徴・オーダーのご相談はこちら</a>";
+
+
+                        $(".other_products_box").append(obj.other_products.tree_species);
+
+                    }
+
+                    if (json["this_product"]["delivery_schedule"] != "") {
+                        obj.this_product.delivery_schedule += "<tr class='table-delivery_schedule'>";
+                        obj.this_product.delivery_schedule += "<td class='table-title'>納期</td>";
+                        obj.this_product.delivery_schedule += "<td class='table-line'>" + json["this_product"]["delivery_schedule"] + "</td>";
+                        obj.this_product.delivery_schedule += "</tr>";
+                    }
+
+                    if (json["this_product"]["tree_species"] != "") {
+                        obj.this_product.tree_species += "<tr class='table-tree_species'>";
+                        obj.this_product.tree_species += "<td class='table-title'>樹種</td>";
+                        obj.this_product.tree_species += "<td class='table-line'>" + json["this_product"]["tree_species"] + "</td>";
+                        obj.this_product.tree_species += "</tr>";
+                    }
+
+                    if (json["this_product"]["size"] != "") {
+                        obj.this_product.size += "<tr class='table-size'>";
+                        obj.this_product.size += "<td class='table-title'>サイズ</td>";
+                        obj.this_product.size += "<td class='table-line'>" + json["this_product"]["size"] + "</td>";
+                        obj.this_product.size += "</tr>";
+                    }
+
+                    result += "<table>";
+                    result += obj.this_product.delivery_schedule;
+                    result += obj.this_product.tree_species;
+                    result += obj.this_product.size;
+                    result += "</table>";
+
+                    $(".add_js_data-tree_species_and_size").append(result);
+
+
+                    // ふるさと納税ボックス
+
+                    if (Object.keys(json["furusato-tax"]).length && json["furusato-tax"]["active"] === 1) {
+                        // console.log("Object => ", Object.keys(json["furusato-tax"]));
+                        // console.log("Active => ", json["furusato-tax"]["active"]);
+                        // console.log("URL => ", Object.keys(json["furusato-tax"]["url"]));
+
+                        var result_furusato_tax = "";
+
+                        result_furusato_tax += '<div class="furusato-tax_box"><div class="box__heading"><p class="title">ふるさと納税のご案内</p><p class="caption">ヒダコレの家具は店頭・オンラインショップだけではなく『ふるさと納税サイト』からもご購入いただけます。<br>お取り扱いのある『ふるさと納税サイト』を家具毎にまとめております。<br>日頃お使いの『ふるさと納税サイト』からぜひチェックしてみてください。</p></div>';
+                        result_furusato_tax += '<ul>';
+
+                        Object.keys(json["furusato-tax"]["url"]).forEach(function (key) {
+                            result_furusato_tax += '<li><a href="' + json["furusato-tax"]["url"][key] + '" target="_blank" rel="noopener">『' + key + '』でみる</a></li>';
+                        });
+
+                        result_furusato_tax += '</ul>';
+                        result_furusato_tax += '</div>';
+
+                        $(".add_js_data-furusato-tax").append(result_furusato_tax);
+                    }
+
+                }else{
+                    // Empty
+                }
+
+            });
+
+        </script>
+
+    <{else}>
+
+        <!-- 本番 -->
+
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('.slider').slick({
+                    dots: true,
+                    fade: true,
+                    prevArrow: '<span class="prev-arrow">前へ</span>',
+                    nextArrow: '<span class="next-arrow">次へ</span>',
+                    customPaging: function(slider, i) {
+                        var thumbSrc = $(slider.$slides[i]).children('div').children('div').data('thumb');
+                        return '<img src="' + thumbSrc + '">';
+                    }
+                });
+
+                var json_makeshop = "<{$item.description2|escape:json}>";
+
+                // console.log(json_makeshop);
+
+                var result = "";
+                var obj = {
+                    "this_product" : {
+                        "delivery_schedule" : "",
+                        "tree_species" : "",
+                        "size" : ""
+                    },
+                    "other_products" : {
+                        "tree_species" : ""
+                    }
+                };
+
+                if(json_makeshop != ""){
+
+                    var json = JSON.parse(json_makeshop);
+
+                    console.log(json["this_product"]["delivery_schedule"]);
+                    // console.log(json["this_product"]["size"]);
+                    // console.log(json["this_product"]["tree_species"]);
+
+                    // console.log(json["other_products"]);
+                    // console.log(json["other_products"]["tree_species"]["cherry"]);
+
+
+                    if (Object.keys(json["other_products"]["tree_species"]["cherry"]).length) {
+
+                        // console.log("空ではない時");
+
+                        obj.other_products.tree_species += "<p class='caption'>ヒダコレ オンラインショップでご用意している樹種以外に下記の樹種で家具をお作りできます。<br>お部屋の色に合わせた樹種でご用意できますので、ぜひご検討下さいませ。";
+                        obj.other_products.tree_species += "<ul>";
+
+                        for (var key in json["other_products"]["tree_species"]) {
+
+                            // console.log(key + ': ' + json["other_products"]["tree_species"][key]);
+
+                            var title = "";
+                            var price = Number(json["other_products"]["tree_species"][key]).toLocaleString();
+
+                            switch (key) {
+                            case 'nire':
+                                title = "ニレ"
+                                break;
+                            case 'tamo':
+                                title = "タモ"
+                                break;
+                            case 'kurumi':
+                                title = "クルミ"
+                                break;
+                            case 'kaba':
+                                title = "カバ"
+                                break;
+                            case 'nara':
+                                title = "ナラ"
+                                break;
+                            case 'cherry':
+                                title = "チェリー"
+                                break;
+                            case 'walnut':
+                                title = "ウォルナット"
+                                break;
+                            };
+
+                            if(price != "0"){
+                                obj.other_products.tree_species += "<li><p class='other_products-title'>" + title + "</p><p class='other_products-price'>" + price + "<span class='yen'>円</span></p></li>";
+                            }
+
+                            
+                        }
+
+                        obj.other_products.tree_species += "</ul>";
+                        obj.other_products.tree_species += "<a class='button' href='/view/page/tree-species'>樹種の特徴・オーダーのご相談はこちら</a>";
+
+
+                        $(".other_products_box").append(obj.other_products.tree_species);
+
+                    }
+
+                    if (json["this_product"]["delivery_schedule"] != "") {
+                        obj.this_product.delivery_schedule += "<tr class='table-delivery_schedule'>";
+                        obj.this_product.delivery_schedule += "<td class='table-title'>納期</td>";
+                        obj.this_product.delivery_schedule += "<td class='table-line'>" + json["this_product"]["delivery_schedule"] + "</td>";
+                        obj.this_product.delivery_schedule += "</tr>";
+                    }
+
+                    if (json["this_product"]["tree_species"] != "") {
+                        obj.this_product.tree_species += "<tr class='table-tree_species'>";
+                        obj.this_product.tree_species += "<td class='table-title'>樹種</td>";
+                        obj.this_product.tree_species += "<td class='table-line'>" + json["this_product"]["tree_species"] + "</td>";
+                        obj.this_product.tree_species += "</tr>";
+                    }
+
+                    if (json["this_product"]["size"] != "") {
+                        obj.this_product.size += "<tr class='table-size'>";
+                        obj.this_product.size += "<td class='table-title'>サイズ</td>";
+                        obj.this_product.size += "<td class='table-line'>" + json["this_product"]["size"] + "</td>";
+                        obj.this_product.size += "</tr>";
+                    }
+
+                    result += "<table>";
+                    result += obj.this_product.delivery_schedule;
+                    result += obj.this_product.tree_species;
+                    result += obj.this_product.size;
+                    result += "</table>";
+
+                    $(".add_js_data-tree_species_and_size").append(result);
+
+                    // ふるさと納税ボックス
+
+                    if (Object.keys(json["furusato-tax"]).length && json["furusato-tax"]["active"] === 1) {
+                        // console.log("Object => ", Object.keys(json["furusato-tax"]));
+                        // console.log("Active => ", json["furusato-tax"]["active"]);
+                        // console.log("URL => ", Object.keys(json["furusato-tax"]["url"]));
+
+                        var result_furusato_tax = "";
+
+                        result_furusato_tax += '<div class="furusato-tax_box"><div class="box__heading"><p class="title">ふるさと納税のご案内</p><p class="caption">ヒダコレの家具は店頭・オンラインショップだけではなく『ふるさと納税サイト』からもご購入いただけます。<br>お取り扱いのある『ふるさと納税サイト』を家具毎にまとめております。<br>日頃お使いの『ふるさと納税サイト』からぜひチェックしてみてください。</p></div>';
+                        result_furusato_tax += '<ul>';
+
+                        Object.keys(json["furusato-tax"]["url"]).forEach(function (key) {
+                            result_furusato_tax += '<li><a href="' + json["furusato-tax"]["url"][key] + '" target="_blank" rel="noopener">『' + key + '』でみる</a></li>';
+                        });
+
+                        result_furusato_tax += '</ul>';
+                        result_furusato_tax += '</div>';
+
+                        $(".add_js_data-furusato-tax").append(result_furusato_tax);
+                    }
+
+                }else{
+                    // Empty
+                }
+
+            });
+
+        </script>
+    <{/if}>
+
+    <{$makeshop.body_bottom}>
+
+</body>
+</html>

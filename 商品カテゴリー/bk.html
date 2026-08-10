@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+<meta charset="utf-8">
+<title><{$page.title}></title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="飛騨,HIDA,家具,国産家具,オーダー家具,手仕事,クラフト,雑貨,ヒダコレ,高山" lang="ja">
+<meta name="description" content="<{$page.description}>">
+<link rel="shortcut icon" type="image/ico" href="<{$shop.favicon_url}>">
+<meta property="og:title" content="<{$page.title}>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<{$page.title}>">
+<meta property="og:description" content="<{$page.description}>">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Module / Common head -->
+<{$module.common_head}>
+
+<!-- Module / CSS -->
+<{$module.common_css}>
+
+<{$makeshop.head}>
+</head>
+
+<body id="<{$page.id}>">
+
+    <!-- Module / Common body -->
+    <{$module.common_body}>
+
+    <{$makeshop.body_top}>
+
+    <!-- Module / floating_button -->
+    <{$module.floating_button}>
+
+    <!-- Module / Header -->
+    <{$module.header}>
+
+    <!-- Module / SP Drawer -->
+    <{$module.sp_drawer}>
+
+    <!-- Module / SP Header -->
+    <{$module.sp_header}>
+
+    <div class="contents_body">
+
+        <div class="breadcrumb_navigation_box">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="<{$url.top}>">
+                      <span itemprop="name">ホーム</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="<{$category.url}>"><span itemprop="name"><{$category.name}></span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+              </ol>
+        </div>
+
+        <div class="layout__box">
+            <div class="left_contents">
+                <p class="caption">飛騨の家具や工芸をみる</p>
+                <!-- Module / Categories -->
+                <{$module.side_categories}>
+            </div>
+            <div class="right_contents">
+                <!-- ここからバナー系 -->
+                <{if $category.code == 're-wakagu'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                和家具は、日本の生活様式に即して作られた、非常に合理的な家具でした。<br>
+                                <br>
+                                例えばちゃぶ台は、一つの部屋を茶の間としても寝室としても使う日本人の生活様式において、簡単に折りたたんで出し入れができるという点で、非常に理にかなっていました。<br>
+                                <br>
+                                また、桐の木に防虫・防カビ・耐火性があることを知っていた昔の人たちは、衣類を収納する箱やタンスに桐を用いました。大火に見舞われても、桐ダンスだけは燃えずに残ったという話もあります。<br>
+                                <br>
+                                やがて西洋の文化が主流になり、日本の伝統的な生活様式が失われていくにつれ、和家具も姿を消していきました。ちゃぶ台をひっくり返す、という言い回しもいずれ消えてしまうのかもしれません。<br>
+                                <br>
+                                私たちは、和家具の機能的な側面と、それがもたらす情緒的な風景にもう一度目を向け、見直すことにしました。<br>
+                                かつて触れたことがある人も、そうでない人も、快適に使えて、そしてどこか懐かしい。ヒダコレの和家具は、古くて新しい家具です。
+                            </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'ouchi-work'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                趣味・娯楽の時間だけでなく、働く場所も外から中へ。テレワークという概念に続き、在宅ワークが定着し始めています。<br>
+                                <br>
+                                しかし自宅は、オフィスほど仕事をするのに整った環境ではありません。例えばパソコンを開く場所がなかったり、書類を広げられるだけの広いデスクがなかったり、そもそも家族と共用のテーブルしかなかったりと、障害や誘惑がたくさんあります。<br>
+                                <br>
+                                そんな時は、思い切って在宅ワーク用のデスクを用意するのもいいかもしれません。
+                            </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'mirror-in-room'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                歯を磨くとき、髪を乾かすとき、化粧をするとき。<br>
+                                <br>
+                                鏡は誰もが一日一度は見ることでしょう。<br>
+                                <br>
+                                鏡を通して見つめるのは、自分。より良い自分であろうとするその時間はとても素敵で大切なもの。毎日見るものだからこそ、鏡自身は派手な主張はせず、その時間をそっと見守るものであってほしいと思います。<br>
+                                <br>
+                                ヒダコレは、余計な装飾のないシンプルな、しかしちょっとだけこだわった鏡を作りました。
+                                </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'photo-tree'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                フィルムカメラで限られた枚数の写真しか撮れず、現像にも時間がかかった時代は終わりました。<br>
+                                <br>
+                                今やいつでも、どこでも、何枚でも、気軽に撮ってすぐにデジタルの画面で楽しむことができるようになりました。<br>
+                                <br>
+                                しかし、写真が身近なものになった一方で、わざわざ写真を印刷して飾ったり、アルバムに綴じたりすることは減ってしまったかもしれません。<br>
+                                <br>
+                                写真を眺めると、どんなに昔の出来事でも、その時の感情や空間、においや気温がすぐによみがえります。そしてその写真が画面から飛び出して、L判の写真用紙になったとき、思い出と自分の距離はもっと近くなります。<br>
+                                <br>
+                                あの日、あの時にいつでもタイムスリップできるよう、特別な思い出を大切に見守ってくれるフォトフレームを作りました。
+                            </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'chair-stool'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                飛騨地域の家具メーカーから個人工房の木工作家さんまで、デザインや素材の異なるチェアやスツールを豊富に取り揃えています。<br>
+                                <br>
+                                テーブルのサイズや人数に合わせて同色で揃えても良し。色違いを混ぜるのも良し。飛騨の匠の技術とこだわりの詰まった作品の中から、あなたのお気に入りを探してみてください。
+                            </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'hida-crafts'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                木工、陶芸、吹きガラス、張り子など、飛騨のクラフト作家をご紹介。<br>
+                                <br>
+                                「HIDA・COLLECTION」という名前には、飛騨のいいもの・こだわりのものを全国の人に知っていただきたいという思いがあります。<br>
+                                <br>
+                                飛騨の匠の歴史から続く工芸・民芸の文化と、飛騨の豊かな自然の中で丁寧につくりあげられた作品には、それぞれの作家さんの唯一無二の個性と温かみがあふれています。<br>
+                                <br>
+                                思わず手にとってしまうほど心惹かれるクラフト作品と出会えるところ。<br>
+                                <br>
+                                ヒダコレがそのような場所と機会になれるように、今まで通りに「飛騨のいいもの・こだわり」をご紹介していきたいと思います。
+                            </p>
+                            <!-- <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a> -->
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'ct117'}>
+                    <div class="category_banner category_name_117">
+                        <figure>
+                            <img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/azuchiten/2026-azuchiten.png">
+                            <figcaption>
+                                <h2>Blown Glass Exhibition<br>ー 安土忠久 安土天平 吹きガラス展 ー</h2>
+                                <p class="line" style="font-weight: 700;">開催期間 : 8/18(火)13:00 - 8/25(火)15:00</p>
+                                
+                            </figcaption>
+                        </figure>
+                        
+                        <!-- <div class="captions-box">
+                            <p class="">安土忠久さんが新たに制作された小さなへちかんだグラスをはじめ、過去に制作されたお皿や小皿、そして一点ものなどが並びます。また、安土天平さんの作品も昨年よりさらにアイテムが増える予定です。どうぞお楽しみに。</p>
+                            <p class="">※店舗での展示会の後にオンライン展開催となりますので、売り切れの際はご容赦ください。</p>
+                        </div> -->
+
+                        <!-- <div class="captions-box">
+                            <p class="">〈店舗開催期間〉</p>
+                            <p class="">
+                                開催期間 : 7/25(金) - 8/3(日) 9:30-17:30<br />
+                                定休日 : 7/30・7/31<br />
+                                住所 : 岐阜県高山市上岡本町3-362 ヒダコレ家具1F<br />
+                                TEL : <a href="tel:0120-690-315">0120-690-315</a>
+                                
+                            </p>
+                        </div> -->
+
+                        <div class="captions-box">
+                            <p>安土 忠久さん、安土 天平さんの<span class="underline">通常ページ</span>は<br />下記からご覧ください</p>
+                            <div class="buttons">
+                                <a href="https://www.hida-collection.shop/view/category/azuchi-tadahisa">「安土 忠久さん」の通常ページ</a>
+                                <a href="https://www.hida-collection.shop/view/category/azuchi-tenpei">「安土 天平さん」の通常ページ</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                <{/if}>
+                <!-- <{if $category.code == 'azuchi-tadahisa'}>
+                    <div class="category_banner" style="margin: 0 0 50px;">
+                        <figure><img src="https://workspace.hidacolle.com/img/azuchi2-1.jpg"></figure>
+                        <figcaption>
+                            <h2>安土忠久吹き硝子展のお知らせ</h2>
+                            <p class="line">
+                                安土忠久さんの特別な作品を<br />期間限定で販売いたします。<br />
+                                2023.8.10(木)10:00 - 8.20(日)17:00
+                            </p>
+                            <a href="">こちらから『<{$category.name}>』をより詳しくお読みいただけます</a>
+                        </figcaption>
+                    </div>
+                <{/if}> -->
+                <!-- 「オーダーテーブルをネットで」 -->
+                <{if $category.code == 'order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                ヒダコレのカスタムオーダー家具の中から、まずネットでも簡単にご注文いただけるようにセミオーダーテーブルを考えました。<br />
+                                <br />
+                                お客様のお部屋に合ったご希望サイズ、暮らし方に合った理想のデザインなど、無垢の木のバリエーションから天板を選んでいただき、そして木や鉄の脚をお選びいただくだけの簡単な工程です。<br />
+                                <br />
+                                基本形のタイプの天板も、ホタテタイプやロの字タイプ、座卓になる兼用脚など定番の脚も、多彩なラインナップが揃っています。
+
+
+                            </p>
+                            <a href="/view/page/oder-tables">より詳しくはこちら</a>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <!-- 「オーダーテーブルをネットで」 -->
+                <{if $category.code == 'boards-order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                「オーダーテーブルをネットで」でお取り扱いのある天板を全て並べてみました。<br />
+                                <br />
+                                両側に耳付き、片側に耳付き、丸い天板まで様々な形が揃っています。<br />
+                                <br />
+                                樹種も暮らしに合わせ、多くの樹種からお選びいただけます。
+                                <br />
+                                サイズもお問合せ頂くだけで、表記サイズ以外のサイズも喜んで対応します。<br />
+                                <br />
+                                ぜひお気に入りの天板を探してみてください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'ears-tables-boards-order_tables'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                家族の集まるダイニングから、書斎・仕事机に丁度いいテーブル天板。<br />
+                                <br />
+                                テーブル天板は、両側に無垢の木を感じられる耳がついています。なので壁付けではなく、お部屋の真ん中で使うテーブルが良いですね。<br />
+                                <br />
+                                大きサイズのご用意もあるので、家族みんなで囲むダイニングテーブルの天板にもぴったりです。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'round-tables-boards-order_tables'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                お部屋を広く、また小さいスペースにもフィットする丸テーブル天板。<br />
+                                <br />
+                                丸テーブル天板を囲む様に椅子が置かれるため、みんなでの食事も、作業ももっと楽しくなります。<br />
+                                <br />
+                                寝室や、書斎、子供部屋などあまり大きく場所をとれないコンパクトなお部屋にもぴったりです。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'desk-boards-order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                書斎・仕事机、寝室の空いたスペースに丁度いいデスク天板です。<br />
+                                <br />
+                                デスク天板は、片側に無垢の木を感じられる耳がついています。お部屋の端の小さなスペースや、書斎などで使うデスクが良いですね。<br />
+                                <br />
+                                様々なサイズのご用意と、オーダーでのカットもできます。このスペースにテーブル置けないかな?もヒダコレのオーダーテーブルで作ってみてください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'ears-desk-boards-order_tables_on'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                書斎・仕事机、寝室の空いたスペースに丁度いいデスク天板です。<br />
+                                <br />
+                                デスク天板は、片側に無垢の木を感じられる耳がついています。お部屋の端の小さなスペースや、書斎などで使うデスクが良いですね。<br />
+                                <br />
+                                様々なサイズのご用意と、オーダーでのカットもできます。このスペースにテーブル置けないかな?もヒダコレのオーダーテーブルで作ってみてください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'legs-order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                「オーダーテーブルをネットで」でお取り扱いのある脚を全て並べてみました。<br />
+                                <br />
+                                おすすめのロの字、すっきりとした印象のホタテ脚や、定番の4本脚まで様々な形をご用意。<br />
+                                <br />
+                                樹種も暮らしに合わせ、多くの樹種からお選びいただけます。
+                                <br />
+                                鉄製の脚もありますので、重厚感が欲しいお部屋にも無垢天板との相性が良いですよね。<br />
+                                <br />
+                                サイズもお問合せ頂くだけで、表記サイズ以外のサイズも喜んで対応します。<br />
+                                <br />
+                                ぜひお気に入りの天板を探してみてください。<br />
+                                <br />
+                                ※丸テーブル天板でご利用いただけない脚がありますので、天板と合わせてご検討の方は商品詳細をよくお読みください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'tables-legs-order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                テーブル用の脚です。大きな天板用の脚になります。<br />
+                                <br />
+                                おすすめのロの字、すっきりとした印象のホタテ脚や、定番の4本脚まで様々な形をご用意。<br />
+                                <br />
+                                樹種も暮らしに合わせ、多くの樹種からお選びいただけます。
+                                <br />
+                                鉄製の脚もありますので、重厚感が欲しいお部屋にも無垢天板との相性が良いですよね。<br />
+                                <br />
+                                サイズもお問合せ頂くだけで、表記サイズ以外のサイズも喜んで対応します。<br />
+                                <br />
+                                ぜひお気に入りの脚を探してみてください。<br />
+                                <br />
+                                ※丸テーブル天板でご利用いただけない脚がありますので、天板と合わせてご検討の方は商品詳細をよくお読みください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'desk-legs-order_tables_online'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                デスク用の脚です。コンパクトな天板用の脚になります。<br />
+                                <br />
+                                すっきりとした印象のホタテ脚とローテーブルにもなる兼用脚をご用意。<br />
+                                <br />
+                                樹種も暮らしに合わせ、多くの樹種からお選びいただけます。
+                                <br />
+                                鉄製の脚もありますので、重厚感が欲しいお部屋にも無垢天板との相性が良いですよね。<br />
+                                <br />
+                                サイズもお問合せ頂くだけで、表記サイズ以外のサイズも喜んで対応します。<br />
+                                <br />
+                                ぜひお気に入りの脚を探してみてください。<br />
+                                <br />
+                                ※丸テーブル天板でご利用いただけない脚がありますので、天板と合わせてご検討の方は商品詳細をよくお読みください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <{if $category.code == 'low_table-legs-order_tables_onli'}>
+                    <div class="category_banner">
+                        <figure><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/<{$category.code}>/main.jpg"></figure>
+                        <figcaption>
+                            <h2><{$category.name}></h2>
+                            <p class="line">
+                                座卓用の脚です。この脚でローテーブルを作ることができます。<br />
+                                <br />
+                                樹種も暮らしに合わせ、多くの樹種からお選びいただけます。
+                                <br />
+                                サイズもお問合せ頂くだけで、表記サイズ以外のサイズも喜んで対応します。<br />
+                                <br />
+                                ぜひお気に入りの樹種を探してみてください。<br />
+                                <br />
+                                ※丸テーブル天板でご利用いただけない脚がありますので、天板と合わせてご検討の方は商品詳細をよくお読みください。
+                            </p>
+                        </figcaption>
+                    </div>
+                <{/if}>
+                <!-- //「オーダーテーブルをネットで」 -->
+
+                <!-- //ここまでバナー系 -->
+
+                <!-- ここから商品の羅列 -->
+
+                <{if $category.code == 'hida-crafts'}>
+                    <!-- 『飛騨の手仕事』 -->
+                    <div class="category_items crafts_categories">
+                        <div class="title_box">
+                            <!-- <div class="line">木工 / 陶芸 / 吹きガラス / 張り子 / 飛騨のクラフト</div> -->
+                            <h1>作家のご紹介</h1>
+                        </div>
+                        <ul>
+                            <{section name=i loop=$category.child_category.list max=100}>
+                                <{if $category.child_category.list[i].item_count > 0}>
+                                    <li>
+                                        <!--商品画像を表示-->
+                                        <a href="<{$category.child_category.list[i].url}>">
+                                            <figure class="add_corner">
+                                                <{if $category.child_category.list[i].name == '安土 忠久'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/azuchi-tadahisa.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '安土 草多'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/azuchi-sota.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '安土 天平'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/azuchi-tenpei.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '沖澤 康平'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/okizawa-kohei.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '沖澤 真紀子'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/okizawa-makiko.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '中西 忠博'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/nakanishi-tadahiro.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '長倉 研'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/ken-nagakura.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '東 和俊'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/azuma-kazutoshi.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '坂本 正成'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/sakamoto-masanori.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '鈴木 修'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/suzuki-osamu.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '丸山 薫'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/maruyama-kaoru.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '渡邉 主税'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/watanabe-chikara.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '平野 明'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/hirano-akira.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '真工藝'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/shinkogei.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                                <{if $category.child_category.list[i].name == '渡部 継太'}><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/craftsman/watanabe-keita.jpg" alt="<{$category.child_category.list[i].name}>"><{/if}>
+                                            </figure>
+                                            <figcaption>
+                                                <div class="item_information">
+                                                    <h4><{$category.child_category.list[i].name}></h4>
+                                                </div>
+                                            </figcaption>
+                                        </a>
+                                    </li>
+                                <{/if}>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{elseif $category.code == 'azuchi-tadahisa'}>
+                    <div class="category_items">
+                        <div class="title_box">
+                            <!-- <div class="line">ヒダコレの暮らしカテゴリー</div> -->
+                            <h1><{$category.name}>のアイテム</h1>
+                            <div class="information">
+                                <p>安土忠久さんが今年新たにつくられた「小さなへちかんだグラス」と<br class="pc_only" />新作「へちかんだ面取りグラス」についての読みものを、ヒダコレnoteにアップしました。</p>
+                                <a href="https://hidacolle.com/note/azuchi-glass/" target="_blank">ヒダコレノートはこちら</a>
+                            </div>
+                            
+                        </div>
+                        <ul>
+                            <{section name=i loop=$category.item.list max=100}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{elseif $category.code == 'chair-stool'}>
+                    <!-- 『椅子・チェア』などイレギュラーレイアウト -->
+                    <div class="category_items">
+                        <div class="title_box">
+                            <!-- <div class="line">ヒダコレの暮らしカテゴリー</div> -->
+                            <h1><{$category.name}>のアイテム</h1>
+                        </div>
+                        <ul>
+                            <{section name=i loop=$category.item.list max=100}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{elseif $category.code == 're-wakagu' || $category.code == 'ouchi-work' || $category.code == 'mirror-in-room' || $category.code == 'photo-tree' || $category.code == 'chair-stool'}>
+                    <!-- バナー / 説明文が『存在する』カテゴリー -->
+                    <div class="category_items">
+                        <div class="title_box">
+                            <div class="line">ヒダコレの暮らしカテゴリー</div>
+                            <h1><{$category.name}>のアイテム</h1>
+                        </div>
+                        <ul>
+                            <{section name=i loop=$category.item.list max=100}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <!-- 「Solid wood table / 一枚板テーブルのアイテム」- カテゴリ表示 -->
+                <{elseif $category.code == 'solidwoodtable'}>
+                    <!-- バナー / 説明文が『存在する』カテゴリー -->
+                    <div class="category_banner category_name_117">
+                        <figure>
+                            <img src="https://workspace.hidacolle.com/img/2025-solidwoodtable.jpg">
+                            <figcaption>
+                                <h2>一枚板テーブル展</h2>
+                                <p class="line">開催期間 : 4/26(土) - 5/20(火)</p>
+                            </figcaption>
+                        </figure>
+                        <div class="captions-box">
+                            <p>ヒダコレ家具のショップで開催している一枚板テーブル展に伴い<br />5月20日までの期間限定で一枚板をオンラインショップでも販売します。</p>
+                            <!-- <div class="buttons">
+                                <a href="https://www.hida-collection.shop/view/category/azuchi-tadahisa">「安土 忠久さん」の通常ページ</a>
+                                <a href="https://www.hida-collection.shop/view/category/azuchi-tenpei">「安土 天平さん」の通常ページ</a>
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                    <div class="category_items">
+                        <!-- <div class="title_box">
+                            <div class="line">TEST</div>
+                            <h1>一枚板テーブル展</h1>
+                        </div> -->
+                        <ul>
+                            <{section name=i loop=$category.item.list max=100}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <!-- 「オーダーテーブルをネットで」- カテゴリ表示 -->
+                <{elseif $category.code == 'order_tables_online'}>
+                    <div class="category_items">
+                        <{if $category.child_category.has_item == '1'}>
+                            <ul>
+                                <li>
+                                    <a href="/view/category/boards-order_tables_online">
+                                        <figure class="add_corner"><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/boards-order_tables_online/main.jpg" alt="選べる天板のイメージ写真"></figure>
+                                        <figcaption>
+                                            <h4>選べる天板</h4>
+                                            <div class="item_information">
+                                                <p class="price"></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/view/category/legs-order_tables_online">
+                                        <figure class="add_corner"><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/categories/order-tables-online/legs-order_tables_online/main.jpg" alt="選べる脚のイメージ写真"></figure>
+                                        <figcaption>
+                                            <h4>選べる脚</h4>
+                                            <div class="item_information">
+                                                <p class="price"></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/view/category/options-order_tables_online">
+                                        <figure class="add_corner"><img src="https://makeshop-multi-images.akamaized.net/hcollection/shopimages/87/01/1_000000000187.jpg" alt="オプションのイメージ写真"></figure>
+                                        <figcaption>
+                                            <h4>オプション</h4>
+                                            <div class="item_information">
+                                                <p class="price"></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            </ul>
+                        <{/if}>
+                    </div>
+                <!-- 「オーダーテーブルをネットで」- アイテム表示 -->
+                <{elseif $category.code == 'boards-order_tables_online' || $category.code == 'desk-boards-order_tables_online' || $category.code == 'desk-legs-order_tables_online' || $category.code == 'ears-desk-boards-order_tables_on' || $category.code == 'ears-tables-boards-order_tables' || $category.code == 'legs-order_tables_online' || $category.code == 'low_table-legs-order_tables_onli' || $category.code == 'order_tables_online' || $category.code == 'round-tables-boards-order_tables' || $category.code == 'tables-legs-order_tables_online' || $category.code == 'ct117'}>
+                    <div class="category_items">
+                        <ul>
+                            <{section name=i loop=$category.item.list max=100}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{else}>
+                    <!-- バナー / 説明文が『存在しない』カテゴリー -->
+                    <div class="category_items empty_banner">
+                        <div class="title_box">
+                            <!-- <div class="line">ヒダコレの暮らしカテゴリー</div> -->
+                            <h1><{$category.name}>のアイテム</h1>
+                        </div>
+                        <ul>
+                            <{section name=i loop=$category.item.list max=1000}>
+                                <li>
+                                    <!--商品画像を表示-->
+                                    <a href="<{$category.item.list[i].url}>">
+                                        <figure class="add_corner"><img src="<{$category.item.list[i].image_L}>" alt="<{$category.item.list[i].name}>"></figure>
+                                        <figcaption>
+                                            <h4><{$category.item.list[i].name}></h4>
+                                            <div class="item_information">
+                                                <p class="price">&yen; <{$category.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </figcaption>
+                                    </a>
+                                </li>
+                            <{/section}>
+                        </ul>
+                    </div>
+                <{/if}>
+                <!-- //ここまで商品の羅列 -->
+
+                <{if $category.code == 'solidwoodtable'}>
+                    <a class="link-note" href="https://www.hidacolle.com/note/ichimaiita-table-exhibition-2025-2/" target="_blank" rel="noopener noreferrer">
+                        ヒダコレノート<br class="sp_only" />一枚板テーブル展2025新しい一枚板が仕上がっています。
+                    </a>
+                <{/if}>
+
+
+                <{if $category.pager.has_item}>
+                    <ul class="pager">
+                        <{if !$category.pager.is_first_display}>
+                            <li><a href="<{$category.pager.first_url}>"><span class="btn-prev">一番前へ</span></a></li>
+                        <{/if}>
+                        <{section name=i loop=$category.pager.list}>
+                            <{if $category.pager.list[i].is_current_page}>
+                                <li><span class="current"><{$category.pager.list[i].number}></span></li>
+                            <{else}>
+                                <li><a href="<{$category.pager.list[i].url}>"><span><{$category.pager.list[i].number}></span></a></li>
+                            <{/if}>
+                        <{/section}>
+                        <{if !$category.pager.is_last_display}>
+                            <li><a href="<{$category.pager.last_url}>"><span class="btn-next">最後へ</span></a></li>
+                        <{/if}>
+                    </ul>
+                <{/if}>
+
+            </div>
+        </div>
+
+        <!-- Module / Footer -->
+        <{$module.footer}>
+
+    </div>
+    <!-- Module / Javascript -->
+    <{$module.common_js}>
+
+    <{$makeshop.body_bottom}>
+</body>
+</html>

@@ -1,0 +1,669 @@
+@media screen and (min-width: 600px) {
+    /*
+    ==============================
+    layout__box
+    ==============================
+    */
+
+    .layout__box{
+        margin : 40px auto 0;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layout__box .left_contents{
+    }
+
+    .layout__box .left_contents .modules_side_categories{
+        margin: 20px 0 0;
+    }
+
+    .layout__box .left_contents .caption{
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .layout__box .right_contents{
+        width: 660px;
+    }
+
+    .layout__box .right_contents .category_banner{
+        padding: 0 0 70px;
+        border-bottom: 2px solid #3C3C3C;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 figcaption{
+        text-align: center;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box{
+        margin: 60px 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p.ta-left{
+        text-align: left !important;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p span.underline{
+        text-decoration: underline;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box .buttons{
+        margin: 30px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0 20px;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box .buttons a{
+        width: 320px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 3px;
+        background-color: #97A547;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout__box .right_contents .category_banner figure img{
+        border-radius: 8px;
+    }
+
+    .layout__box .right_contents .category_banner figcaption{
+        margin: 70px auto 0;
+        width: 400px;
+    }
+
+    .layout__box .right_contents .category_banner figcaption h2{
+        margin: 70px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .layout__box .right_contents .category_banner figcaption .line{
+        margin: 40px 0 0;
+        font-size: 1.6rem;
+        line-height: 1.75em;
+    }
+
+    .layout__box .right_contents .category_banner figcaption a{
+        margin: 40px 0 0;
+        width: 100%;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    .category_items
+    ==============================
+    */
+
+    .category_items{
+        margin: 70px 0 0;
+    }
+
+    .category_items.empty_banner{
+        margin: 0;
+    }
+
+    .category_items .title_box{
+        text-align: center;
+    }
+
+    .category_items .title_box .line{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .category_items .title_box h1{
+        margin: 10px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .category_items .information{
+        margin: 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px 0;
+    }
+
+    .category_items .information p{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .category_items .information a{
+        padding: 5px 10px;
+        width: 300px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #97A547;
+        border-radius: 3px;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category_items ul{
+        margin: 40px 0 0;
+        width: 660px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .category_items ul li{
+        margin: 0 0 40px;
+        width: 320px;
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
+
+    .category_items ul li:hover{
+        opacity: 0.6;
+    }
+
+    .category_items ul li a figure{
+        width: 320px;
+        height: 210px;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .category_items ul li a figure img{
+    }
+
+    .category_items ul li a figcaption{
+        margin: 15px 0;
+        border-top: 2px solid #2d2d2d;
+    }
+
+    .category_items ul li a figcaption h4{
+        margin: 15px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .category_items ul li a figcaption .item_information{
+        margin: 15px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .category_items ul li a figcaption .item_information .price{
+        margin: 5px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .category_items ul li a figcaption .item_information .price .tax{
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .category_items ul li a figcaption .button{
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    ==============================
+    .category_items.empty_banner
+    ==============================
+    */
+
+    .category_items.empty_banner{
+        margin: 0;
+    }
+
+    .category_items.empty_banner .title_box h1{
+        margin: 0;
+    }
+
+    /*
+    ==============================
+    .category_items.crafts_categories
+    ==============================
+    */
+
+    .category_items.crafts_categories ul li a figcaption{
+        margin: 0;
+        text-align: center;
+        border-top: 0;
+    }
+
+    .category_items.crafts_categories ul li a figcaption .item_information{
+        /* margin: 15px 0 0; */
+        width: 100%;
+    }
+
+    .category_items.crafts_categories ul li a figcaption .item_information h4{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    a.link-note{
+        margin: 75px 0 0 0;
+        width: 100%;
+        height: 85px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 175%;
+        text-decoration: underline;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 15px;
+        
+    }
+
+    a.link-note:before{
+        content: "";
+        width: 44px;
+        height: 23px;
+        background-image: url(https://www.hidacolle.com/mark-note.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .pager{
+        margin: 50px auto 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0 30px;
+    }
+
+    .pager li{
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pager li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width : 599px) {
+    /*
+    ==============================
+    layout__box
+    ==============================
+    */
+
+    .layout__box{
+        margin : 40px auto 0;
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layout__box .left_contents{
+        display: none;
+    }
+
+    .layout__box .right_contents{
+        width: 100%;
+    }
+
+    .layout__box .right_contents .category_banner{
+        padding: 0 0 40px;
+        border-bottom: 2px solid #3C3C3C;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 figcaption{
+        text-align: center;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box{
+        margin: 60px 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p.ta-left{
+        text-align: left !important;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box p span.underline{
+        text-decoration: underline;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box .buttons{
+        margin: 30px 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .layout__box .right_contents .category_banner.category_name_117 .captions-box .buttons a{
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border-radius: 3px;
+        background-color: #97A547;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout__box .right_contents .category_banner figure img{
+        border-radius: 8px;
+    }
+
+    .layout__box .right_contents .category_banner figcaption{
+        margin: 30px 0 0;
+        width: 100%;
+    }
+
+    .layout__box .right_contents .category_banner figcaption h2{
+        margin: 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .layout__box .right_contents .category_banner figcaption .line{
+        margin: 20px 0 0;
+        font-size: 1.6rem;
+        line-height: 1.75em;
+    }
+
+    .layout__box .right_contents .category_banner figcaption a{
+        margin: 40px 0 0;
+        width: 100%;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        text-align: center;
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    .category_items
+    ==============================
+    */
+
+    .category_items{
+        margin: 40px 0 0;
+    }
+
+    .category_items.empty_banner{
+        margin: 0;
+    }
+
+    .category_items .title_box{
+        text-align: center;
+    }
+
+    .category_items .title_box .line{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .category_items .title_box h1{
+        margin: 10px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .category_items .information{
+        margin: 30px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px 0;
+    }
+
+    .category_items .information p{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .category_items .information a{
+        padding: 5px 10px;
+        width: 300px;
+        height: 50px;
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #97A547;
+        border-radius: 3px;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category_items ul{
+        margin: 40px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .category_items ul li{
+        margin: 0 0 15px;
+        width: 48.5%;
+        aspect-ratio: 1 / 0.619;
+    }
+
+    .category_items ul li a{
+    }
+
+    .category_items ul li a figure{
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .category_items ul li a figure img{
+    }
+
+    .category_items ul li a figcaption{
+        margin: 15px 0;
+        border-top: 2px solid #2d2d2d;
+    }
+
+    .category_items ul li a figcaption h4{
+        margin: 15px 0 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .category_items ul li a figcaption .item_information{
+        margin: 5px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .category_items ul li a figcaption .item_information .price{
+        margin: 5px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .category_items ul li a figcaption .item_information .price .tax{
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: block;
+        text-align: right;
+    }
+
+    .category_items ul li a figcaption .button{
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    ==============================
+    .category_items.empty_banner
+    ==============================
+    */
+
+    .category_items.empty_banner{
+        margin: 0;
+    }
+
+    .category_items.empty_banner .title_box h1{
+        margin: 0;
+    }
+
+    /*
+    ==============================
+    .category_items.crafts_categories
+    ==============================
+    */
+
+    .category_items.crafts_categories ul li a figcaption{
+        margin: 0;
+        text-align: center;
+        border-top: 0;
+    }
+
+    .category_items.crafts_categories ul li a figcaption .item_information{
+        /* margin: 15px 0 0; */
+        width: 100%;
+    }
+
+    .category_items.crafts_categories ul li a figcaption .item_information h4{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    a.link-note{
+        margin: 75px 0 0 0;
+        padding: 20px 30px;
+        width: 100%;
+        /* height: 85px; */
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 175%;
+        text-align: center;
+        text-decoration: underline;
+        border: 2px solid #000000;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px 15px;
+        
+    }
+
+    a.link-note:before{
+        content: "";
+        width: 44px;
+        height: 16px;
+        background-image: url(https://www.hidacolle.com/mark-note.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .pager{
+        margin: 50px auto 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0 30px;
+    }
+
+    .pager li{
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pager li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+    }
+
+    
+
+
+}
+

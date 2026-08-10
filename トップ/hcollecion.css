@@ -1,0 +1,2492 @@
+@media screen and (min-width: 600px) {
+
+    /*
+    ==============================
+    main_visual_box
+    ==============================
+    */
+
+    .main_visual_box{
+        margin: 20px auto 0;
+        width: 1180px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_visual_box .contents{
+        border-radius: 8px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .main_visual_box .left_contents .contents{
+        width: 750px;
+        height: 464px;
+    }
+
+    .main_visual_box .right_contents .contents{
+        margin: 0 0 20px;
+        width: 410px;
+        height: 222px;
+    }
+
+    .main_visual_box .left_contents a,
+    .main_visual_box .right_contents a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_visual_box .left_contents a figcaption,
+    .main_visual_box .right_contents a figcaption{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /*
+    ==============================
+    information_box
+    ==============================
+    */
+
+    .information_box{
+        margin: 70px auto 0;
+        padding: 40px 0;
+        width: 1000px;
+        text-align: center;
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
+    }
+
+    .information_box p{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    note_box
+    ==============================
+    */
+
+    .note_box{
+        margin: 70px auto 0;
+        padding: 40px 0;
+        width: 1000px;
+        text-align: center;
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
+    }
+
+    .note_box h2{
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+
+    .note_box a{
+        /* margin: 20px 0 0; */
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: block;
+    }
+
+    /*
+    ==============================
+    recommended_items_box
+    ==============================
+    */
+
+    .recommended_items_box{
+        margin: 200px auto 0;
+        width: 100%;
+    }
+
+    .recommended_items_box .title_box{
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        top: -30px;
+        z-index: 2;
+    }
+
+    .recommended_items_box .title_box h2{
+        margin: 25px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recommended_items_box .title_box h3{
+        padding: 0 0 25px;
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .recommended_items_box  p.caption{
+        margin: 30px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2em;
+        text-align: center;
+    }
+
+    .recommended_items_box .contents_box{
+        margin: 0 auto 0;
+        padding: 0 0 100px;
+        width: 100%;
+        background-color: #f1f1f1;
+        position: relative;
+        z-index: 1;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position{
+        margin: 100px auto 0;
+        width: 1000px;
+        display: flex;
+        position: relative;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_image{
+        width: 660px;
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_image a img{
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information{
+        padding: 40px 65px;
+        width: 360px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: absolute;
+        top: 20px;
+        right: 0;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number{
+        text-align: center;
+        border-bottom: 4px solid #CBD97B;
+        position: absolute;
+        top: -75px;
+        right: -100px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number .line{
+        color: #CBD97B;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number .number{
+        color: #CBD97B;
+        font-size: 3.2rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information h3{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .caption{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .tags{
+        margin: 20px 0 0;
+        color: #CBD97B;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .tags a{
+        text-decoration: underline;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information a.button{
+        margin: 40px 0 0 auto;
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position{
+        margin: 20px auto 0;
+        padding: 20px 0 0;
+        width: 1000px;
+        border-top: 2px solid #ffffff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position .item{
+        width: 320px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position .divider{
+        width: 2px;
+        height: 405px;
+        display: block;
+        background-color: #fff;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figure{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figure a img{
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption{
+        margin: -20px auto 0;
+        padding: 20px;
+        width: 280px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number{
+        text-align: center;
+        border-bottom: 4px solid #CBD97B;
+        position: absolute;
+        top: -30px;
+        right: -25px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number .line{
+        color: #CBD97B;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number .number{
+        color: #CBD97B;
+        font-size: 3.2rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .caption{
+        margin: 10px 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .tags{
+        margin: 10px 0 0;
+        color: #CBD97B;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .tags a{
+        margin: 0 0 5px;
+        text-decoration: underline;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption a.button{
+        margin: 40px 0 0 auto;
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+    }
+
+    .recommended_items_box .contents_box ul.categories{
+        margin: 100px auto 0;
+        display: flex;
+        justify-content: center;
+        gap: 0 20px;
+    }
+
+    .recommended_items_box .contents_box ul.categories li{
+    }
+
+    .recommended_items_box .contents_box ul.categories a{
+        padding: 0 25px;
+        height: 45px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommended_items_box .contents_box .layout__centering{
+        margin: 100px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .recommended_items_box .contents_box .layout__centering .layout__buuton{
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    proposal_for_living_box-second
+    ==============================
+    */
+    .proposal_for_living_box-second{
+        margin: 150px auto 0;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .title_box{
+        margin: 0 auto 0;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        z-index: 2;
+    }
+
+    .proposal_for_living_box-second .title_box p.line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .title_box h2{
+        margin: 10px 0 0;
+        font-size: 3.2rem;
+        width: 320px;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .title_box p.caption{
+        width: 660px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+        position: relative;
+        top: 45px;
+    }
+
+    .proposal_for_living_box-second .contents_box{
+        margin: 70px auto 0;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item{
+        margin: 0 0 40px;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item .item_contents{
+        margin: 0 auto;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item .item_contents_layout{
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 1000px;
+        display: flex;
+        position: relative;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item.left_paragraph .item_contents_layout{
+        justify-content: flex-end;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figure{
+        width: 680px;
+        border-radius: 8px;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figure a img{
+        border-radius: 8px;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption{
+        padding: 40px 70px;
+        width: 340px;
+        /* height: 400px; */
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item.right_paragraph figcaption{
+        position: absolute;
+        top: 40px;
+        right: 0;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item.left_paragraph figcaption{
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption h3{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption .caption{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption a.button{
+        margin: 20px 0 0 auto;
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box{
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item.left_paragraph .products_box{
+        justify-content: flex-start;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box_layout{
+        padding: 5px 25px 20px 25px;
+        background-color: #f1f1f1;
+        box-sizing: border-box;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box .title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products{
+        margin: 0 0 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .product{
+        margin: 0 0 0 10px;
+        padding: 0 15px;
+        /* width: 60px; */
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #fff;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box{
+        margin: 0 auto;
+        padding: 0 25px;
+        width: 1000px;
+        height: 60px;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box_layout{
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box .title{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories{
+        display: flex;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box a.category{
+        margin: 0 0 0 25px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /*
+    ==============================
+    box__order_tables_online
+    ==============================
+    */
+
+    .box__order_tables_online{
+        margin: 200px auto 0;
+        background-image: url(https://gigaplus.makeshop.jp/hcollection/assets/image/bg_tables.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top 45px left 0;
+    }
+
+    .box__order_tables_online .title_box{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .box__order_tables_online .title_box h2{
+        margin: 25px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .box__order_tables_online .title_box h3{
+        padding: 0 0 25px;
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .box__order_tables_online .box__explanation{
+        margin: 100px auto 0;
+        background-image: url(https://gigaplus.makeshop.jp/hcollection/assets/image/bg_tables.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom 190px left 0;
+    }
+
+    .box__order_tables_online .box__explanation .heading{
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .box__order_tables_online .box__explanation .caption{
+        margin: 50px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 200%;
+        text-align: center;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images{
+        margin: 50px auto 0;
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .divider{
+        font-size: 5rem;
+        padding: 65px 0 0;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image{
+        width: 320px;
+        position: relative;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure{
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption{
+        margin: 30px 0 0;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption .title{
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption .caption{
+        margin: 30px 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 150%;
+        text-align: left;
+    }
+
+    .box__order_tables_online .layout__centering{
+    }
+
+    .box__order_tables_online .layout__centering .layout__buuton{
+        margin: 100px auto 0;
+        width: 350px;
+    }
+
+    .box__order_tables_online .contact_box{
+        margin: 50px auto 0;
+        width: 660px;
+        text-align: center;
+    }
+
+    .box__order_tables_online .contact_box p{
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 200%;
+    }
+
+    .box__order_tables_online .contact_box a{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    chairandstool_box
+    ==============================
+    */
+
+    .chairandstool_box{
+        margin: 200px 0 0;
+    }
+
+    .chairandstool_box .title_layout{
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .chairandstool_box .title_layout .title_box{
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .chairandstool_box .title_layout .title_box h2{
+        margin: 25px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .chairandstool_box .title_layout .title_box h3{
+        padding: 0 0 25px;
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .chairandstool_box .title_layout .caption{
+        width: 320px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        line-height: 200%;
+    }
+
+    .chairandstool_box .contents_box{
+        margin: 100px auto 0;
+        width: 1000px;
+    }
+
+    .chairandstool_box .contents_box .items{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .chairandstool_box .contents_box .items .item{
+        width: 320px;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image{
+        width: 100%;
+        height: 210px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image a{
+        width: 100%;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image a image{
+        width: 100%;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_name{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .chairandstool_box .layout__centering{
+    }
+
+    .chairandstool_box .layout__centering .layout__buuton{
+        margin: 100px auto 0;
+        width: 350px;
+    }
+
+    /*
+    ==============================
+    handicraft_of_hida_box
+    ==============================
+    */
+
+    .handicraft_of_hida_box{
+        margin: 200px 0 350px;
+        position: relative;
+    }
+
+    .handicraft_of_hida_box .title_layout{
+        margin: 0 auto;
+        width: 1000px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .handicraft_of_hida_box .title_layout .title_box{
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .handicraft_of_hida_box .title_layout .title_box h2{
+        margin: 25px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .handicraft_of_hida_box .title_layout .title_box h3{
+        padding: 0 0 25px;
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida{
+        margin: 150px auto 0;
+        width: 1180px;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .title-contents_handicrafts_of_hida{
+        margin: 0 0 0 770px;
+        width: 320px;
+        font-size: 2.1rem;
+        font-weight: bold;
+        line-height: 200%;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .text-contents_handicrafts_of_hida{
+        margin: 40px 0 0 770px;
+        width: 410px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 200%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .layout__centering{
+        margin: 40px 0 0 770px;
+        width: 305px;
+    }
+
+    .handicraft_of_hida_box .bgimage-handicrafts_of_hida{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /*
+    ==============================
+    purpose_box
+    ==============================
+    */
+
+    .purpose_box{
+        margin: 120px auto 0;
+        width: 1000px;
+    }
+
+    .purpose_box .title_box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    .purpose_box .left_contents{
+        width: 100%;
+    }
+
+    .purpose_box .right_contents{
+        width: 100%;
+    }
+
+    .purpose_box .title_box h1{
+        margin: -15px 0 0;
+        font-size: 4.2rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .purpose_box .title_box .line{
+        font-size: 2.1rem;
+        font-weight: bold;
+
+    }
+
+    .purpose_box .title_box .caption{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2em;
+    }
+
+    /*
+    ==============================
+    features_box
+    ==============================
+    */
+
+    .features_box{
+        margin: 150px auto 0;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 20px;
+    }
+
+    .features_box .title_box{}
+    .features_box .title_box .title{
+        font-size: 4.8rem;
+        font-weight: bold;
+    }
+    .features_box .title_box .caption{
+        margin: 15px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+    }
+    .features_box .banners{
+        width: 660px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0 20px;
+    }
+    .features_box .banners a{
+        display: inline-block;
+    }
+    .features_box .banners a img{
+        border-radius: 3px;
+    }
+
+
+    /*
+    ==============================
+    proposal_for_living_box
+    ==============================
+    */
+
+    .proposal_for_living_box{
+        margin: 120px auto 0;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .proposal_for_living_box .title_box{
+        width: 320px;
+    }
+
+    .proposal_for_living_box .title_box .line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box .title_box h2{
+        margin: 10px 0 0;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+    .proposal_for_living_box .title_box .caption{
+        margin: 33px 0 0;
+        width: 275px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .proposal_for_living_box .contents_box{
+        width: 660px;
+    }
+
+    .proposal_for_living_box .contents_box ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proposal_for_living_box .contents_box ul li{
+        margin: 0 0 20px;
+        width: 320px;
+        height: 210px;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .proposal_for_living_box .contents_box ul li a{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .proposal_for_living_box .contents_box ul li a h3{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .proposal_for_living_box .contents_box ul li a h3.b{
+        color: #2d2d2d;
+    }
+
+    /*
+    ==============================
+    find_items_box
+    ==============================
+    */
+
+    .find_items_box{
+        margin: 70px auto 0;
+        padding: 70px 0 0;
+        width: 1000px;
+        border-top: 2px solid #E1E1E1;
+    }
+
+    .find_items_box .title_box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .find_items_box .title_box p.line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .find_items_box .title_box h3{
+        margin: 10px 0 0;
+        font-size: 3.2rem;
+        width: 320px;
+        font-weight: bold;
+    }
+
+    .find_items_box .title_box p.caption{
+        width: 660px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .find_items_box .contents_box{
+        margin: 40px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .find_items_box .contents_box .left_contents{
+        /* 変数組み込み後Module化 */
+        width: 320px;
+    }
+
+    .find_items_box .contents_box .right_contents ul{
+        width: 660px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .find_items_box .contents_box .right_contents ul li{
+        margin: 0 0 20px;
+        width: 320px;
+        opacity: 1;
+        transition: opacity 0.4s ease;
+    }
+
+    .find_items_box .contents_box .right_contents ul li:hover{
+        opacity: 0.6;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a{
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figure{
+        width: 320px;
+        height: 210px;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figure img{
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption{
+        margin: 15px 0;
+        border-top: 2px solid #2d2d2d;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption h4{
+        margin: 15px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information{
+        margin: 15px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information .price{
+        margin: 5px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information .price .tax{
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .button{
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    ==============================
+    handcrafs_box
+    ==============================
+    */
+
+    .handcrafs_box{
+        margin: 120px auto 0;
+        width: 1000px;
+        color: #fff;
+    }
+
+    .handcrafs_box a{
+        padding: 0 65px;
+        width: 100%;
+        height: 230px;
+        background-image:url(https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/pc_banner.jpg);
+        background-repeat:  no-repeat;
+        background-position:center center;
+        background-size:cover;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .handcrafs_box a .title{
+    }
+
+    .handcrafs_box a .title .line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .handcrafs_box a .title h3{
+        margin: 5px 0 0;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    .handcrafs_box a .caption{
+    }
+
+    .handcrafs_box a .caption .line{
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+}
+
+@media screen and (max-width : 599px) {
+
+	/*
+    ==============================
+    main_visual_box
+    ==============================
+    */
+
+    .main_visual_box{
+        margin: 0 auto 0;
+        padding: 15px 0 0;
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_visual_box .contents{
+        border-radius: 8px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .main_visual_box .left_contents .contents{
+        width: 100%;
+        aspect-ratio: 1 / 0.619;
+    }
+
+    .main_visual_box .right_contents{
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_visual_box .right_contents .contents{
+        margin: 0;
+        width: 48.5%;
+        aspect-ratio: 1 / 0.619;
+    }
+
+    .main_visual_box .left_contents a,
+    .main_visual_box .right_contents a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .main_visual_box .left_contents a figcaption,
+    .main_visual_box .right_contents a figcaption{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /*
+    ==============================
+    information_box
+    ==============================
+    */
+
+    .information_box{
+        margin: 40px auto 0;
+        padding: 20px 0;
+        width: 93%;
+        text-align: center;
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
+    }
+
+    .information_box p{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    /*
+    ==============================
+    note_box
+    ==============================
+    */
+
+    .note_box{
+        margin: 40px auto 0;
+        padding: 20px 0;
+        width: 93%;
+        text-align: center;
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
+    }
+
+    .note_box h2{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .note_box a{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: block;
+    }
+
+    /*
+    ==============================
+    recommended_items_box
+    ==============================
+    */
+
+    .recommended_items_box{
+        margin: 70px auto 0;
+        width: 100%;
+    }
+
+    .recommended_items_box .title_box{
+        margin: 0 auto 0;
+        width: 93%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .recommended_items_box .title_box{
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: center; */
+        align-items: center;
+        position: relative;
+        top: -20px;
+        z-index: 2;
+    }
+
+    .recommended_items_box .title_box h2{
+        margin: 20px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recommended_items_box .title_box h3{
+        padding: 0 0 15px;
+        font-size: 3.1rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .recommended_items_box p.caption{
+        margin: 20px auto 0;
+        width: 93%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 2.0em;
+    }
+
+    .recommended_items_box .contents_box{
+        margin: 0 auto ;
+        padding: 0 0 50px;
+        width: 100%;
+        background-color: #f1f1f1;
+        position: relative;
+        z-index: 1;
+    }
+
+    /*
+    ==============================
+    recommended_items_box -> first_position
+    ==============================
+    */
+
+    .recommended_items_box .contents_box .recommended_items-first_position{
+        margin: 50px auto 0;
+        width: 93%;
+        position: relative;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_image{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_image a img{
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information{
+        margin: -20px auto 0;
+        padding: 20px 20px;
+        width: 96%;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number{
+        text-align: center;
+        border-bottom: 4px solid #CBD97B;
+        position: absolute;
+        top: -50px;
+        right: -35px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number .line{
+        color: #CBD97B;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .hidacolle_number .number{
+        color: #CBD97B;
+        font-size: 3.2rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information h3{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .caption{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .tags{
+        margin: 15px 0 0;
+        color: #CBD97B;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information .tags a{
+        margin: 0 0 10px;
+        text-decoration: underline;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-first_position .item_information a.button{
+        /* margin: 0 0 0 auto; */
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /*
+    ==============================
+    recommended_items_box -> second_position
+    ==============================
+    */
+
+    .recommended_items_box .contents_box .recommended_items-second_position{
+        margin: 20px auto 0;
+        padding: 20px 0 0;
+        width: 90%;
+        border-top: 2px solid #ffffff;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+        overflow-x: scroll;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position .item{
+        margin: 0 20px 0 0;
+        width: 70%;
+        flex-shrink: 0;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position .divider{
+        width: 2px;
+        /* height: 405px; */
+        display: block;
+        background-color: #fff;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figure{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figure a img{
+        border-radius: 8px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption{
+        margin: -20px auto 0;
+        padding: 20px 15px;
+        width: 93%;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number{
+        text-align: center;
+        border-bottom: 4px solid #CBD97B;
+        position: absolute;
+        top: -22px;
+        right: -19px;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number .line{
+        color: #CBD97B;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .hidacolle_number .number{
+        color: #CBD97B;
+        font-size: 2.1rem;
+        font-weight: 600;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .caption{
+        margin: 10px 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .tags{
+        margin: 10px 0 0;
+        color: #CBD97B;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption .tags a{
+        margin: 0 0 5px;
+        text-decoration: underline;
+        display: block;
+    }
+
+    .recommended_items_box .contents_box .recommended_items-second_position figcaption a.button{
+        margin: 40px 0 0 auto;
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .recommended_items_box .contents_box ul.categories{
+        margin: 50px auto 0;
+        width: 93%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 15px;
+    }
+
+    .recommended_items_box .contents_box ul.categories li{
+    }
+
+    .recommended_items_box .contents_box ul.categories a{
+        padding: 0 20px;
+        height: 45px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #fff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recommended_items_box .contents_box .layout__centering{
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .recommended_items_box .contents_box .layout__centering .layout__buuton{
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    proposal_for_living_box-second
+    ==============================
+    */
+
+    .proposal_for_living_box-second{
+        margin: 100px auto 0;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .title_box{
+        margin: 0 auto 0;
+        width: 93%;
+    }
+
+    .proposal_for_living_box-second .title_box p.line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .title_box h2{
+        margin: 10px 0 0;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .title_box p.caption{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .proposal_for_living_box-second .contents_box{
+        margin: 70px auto 0;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item{
+        margin: 0 0 40px;
+        width: 100%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item .item_contents{
+        margin: 0 auto;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item .item_contents_layout{
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 93%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figure{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figure a img{
+        border-radius: 8px;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption{
+        margin: -20px auto 0;
+        padding: 20px;
+        width: 93%;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption .layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption h3{
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption .caption{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items figcaption a.button{
+        margin: 20px 0 0 auto;
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box{
+        margin: 0 auto;
+        width: 93%;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items li.item.left_paragraph .products_box{
+        justify-content: flex-start;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box_layout{
+        padding: 5px 25px 20px 25px;
+        background-color: #f1f1f1;
+        box-sizing: border-box;
+        border-radius: 0 0 8px 8px;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products_box .title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .products{
+        margin: 0 0 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box ul.items .product{
+        margin: 15px 10px 0 0;
+        padding: 0 15px;
+        /* width: 60px; */
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: #fff;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box{
+        margin: 0 auto;
+        padding: 20px 25px;
+        width: 93%;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box_layout{
+    }
+
+    .proposal_for_living_box-second .contents_box .categories_box .title{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box-second .contents_box .categories{
+    }
+
+    .proposal_for_living_box-second .contents_box a.category{
+        margin: 25px 20px 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    box__order_tables_online
+    ==============================
+    */
+
+    .box__order_tables_online{
+        margin: 50px auto 0;
+        width: 100%;
+        background-image: url(https://gigaplus.makeshop.jp/hcollection/assets/image/bg_tables.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top 25px left 0;
+    }
+
+    .box__order_tables_online .title_box{
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .box__order_tables_online .title_box h2{
+        margin: 20px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .box__order_tables_online .title_box h3{
+        padding: 0 0 15px;
+        font-size: 3.1rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .box__order_tables_online .box__explanation{
+        margin: 50px 0 0;
+        background-image: url(https://gigaplus.makeshop.jp/hcollection/assets/image/bg_tables.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom 115px left 0;
+    }
+
+    .box__order_tables_online .box__explanation .heading{
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .box__order_tables_online .box__explanation .caption{
+        margin: 20px auto 0;
+        width: 93%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        line-height: 200%;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images{
+        margin: 50px auto 0;
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .divider{
+        font-size: 3rem;
+        padding: 35px 0 0;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image{
+        width: 93%;
+        position: relative;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure{
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption{
+        margin: 20px 0 0;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption .title{
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .box__order_tables_online .box__explanation .layout__images .block__image figure figcaption .caption{
+        margin: 13px 0 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 150%;
+    }
+
+    .box__order_tables_online .layout__centering{
+        margin: 50px auto 0;
+        width: 93%;
+    }
+
+    .box__order_tables_online .contact_box{
+        margin: 50px auto 0;
+        width: 93%;
+        text-align: center;
+    }
+
+    .box__order_tables_online .contact_box p{
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 200%;
+    }
+
+    .box__order_tables_online .contact_box a{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-decoration: underline;
+        display: inline-block;
+    }
+
+    /*
+    ==============================
+    chairandstool_box
+    ==============================
+    */
+
+    .chairandstool_box{
+        margin: 100px 0 0;
+        width: 100%;
+    }
+
+    .chairandstool_box .title_layout{
+        width: 100%;
+    }
+
+    .chairandstool_box .title_box{
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .chairandstool_box .title_box h2{
+        margin: 20px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .chairandstool_box .title_box h3{
+        padding: 0 0 15px;
+        font-size: 3.1rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .chairandstool_box .title_layout .caption{
+        margin: 20px auto 0;
+        width: 93%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: left;
+        line-height: 200%;
+    }
+
+    .chairandstool_box .contents_box{
+        margin: 50px auto 0;
+        width: 93%;
+    }
+
+    .chairandstool_box .contents_box .items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+
+    .chairandstool_box .contents_box .items .item{
+        width: 100%;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image{
+        width: 100%;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image a{
+        width: 100%;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_image a img{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .chairandstool_box .contents_box .items .item .item_name{
+        margin: 10px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .chairandstool_box .layout__centering{
+    }
+
+    .chairandstool_box .layout__centering .layout__buuton{
+        margin: 50px auto 0;
+        width: 350px;
+    }
+
+    /*
+    ==============================
+    handicraft_of_hida_box
+    ==============================
+    */
+
+    .handicraft_of_hida_box{
+        margin: 100px 0 0;
+    }
+
+    .handicraft_of_hida_box .title_layout{
+        width: 100%;
+    }
+
+    .handicraft_of_hida_box .title_box{
+        margin: 0 auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .handicraft_of_hida_box .title_box h2{
+        margin: 20px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .handicraft_of_hida_box .title_box h3{
+        padding: 0 0 15px;
+        font-size: 3.1rem;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 4px solid #2d2d2d;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida{
+        margin: 50px auto 0;
+        width: 93%;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .title-contents_handicrafts_of_hida{
+        margin: 0 0 0 0;
+        width: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 200%;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .text-contents_handicrafts_of_hida{
+        margin: 20px 0 0 0;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 200%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    .handicraft_of_hida_box .contents-handicrafts_of_hida .layout__centering{
+        margin: 40px auto 0;
+        width: 305px;
+    }
+
+    .handicraft_of_hida_box .bgimage-handicrafts_of_hida{
+        margin: 50px 0 0;
+    }
+
+    .handicraft_of_hida_box .bgimage-handicrafts_of_hida img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*
+    ==============================
+    purpose_box
+    ==============================
+    */
+
+    .purpose_box{
+        margin: 70px auto 0;
+        width: 93%;
+    }
+
+    .purpose_box .title_box{
+        width: 100%;
+    }
+
+    .purpose_box .left_contents{
+        width: 100%;
+    }
+
+    .purpose_box .right_contents{
+        width: 100%;
+    }
+
+    .purpose_box .title_box h1{
+        margin: 0;
+        font-size: 2.6rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .purpose_box .title_box .line{
+        margin: 20px 0 0;
+        font-size: 2.1rem;
+        font-weight: bold;
+
+    }
+
+    .purpose_box .title_box .caption{
+        margin: 20px 0 0;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    /*
+    ==============================
+    features_box
+    ==============================
+    */
+
+    .features_box{
+        margin: 75px auto 0;
+        padding: 0 0 40px;
+        width: 93%;
+    }
+
+    .features_box .title_box{}
+    .features_box .title_box .title{
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    .features_box .title_box .caption{
+        margin: 5px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .features_box .banners{
+        margin: 30px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 0 20px;
+    }
+    .features_box .banners a{
+        display: inline-block;
+    }
+    .features_box .banners a img{
+        border-radius: 3px;
+    }
+
+
+    /*
+    ==============================
+    proposal_for_living_box
+    ==============================
+    */
+
+    .proposal_for_living_box{
+        margin: 70px auto 0;
+        width: 93%;
+    }
+
+    .proposal_for_living_box .title_box{
+        width: 100%;
+    }
+
+    .proposal_for_living_box .title_box .line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .proposal_for_living_box .title_box h2{
+        margin: 10px 0 0;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    .proposal_for_living_box .title_box .caption{
+        margin: 20px 0 0;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .proposal_for_living_box .contents_box{
+        width: 100%;
+    }
+
+    .proposal_for_living_box .contents_box ul{
+        margin: 20px 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .proposal_for_living_box .contents_box ul li{
+        margin: 0 0 20px;
+        width: 48.5%;
+        aspect-ratio: 1 / 0.656;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .proposal_for_living_box .contents_box ul li a{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+    }
+
+    .proposal_for_living_box .contents_box ul li a h3{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .proposal_for_living_box .contents_box ul li a h3.b{
+        color: #2d2d2d;
+    }
+
+    /*
+    ==============================
+    find_items_box
+    ==============================
+    */
+
+    .find_items_box{
+        margin: 40px auto 0;
+        padding: 40px 0 0;
+        width: 93%;
+        border-top: 2px solid #E1E1E1;
+    }
+
+    .find_items_box .title_box{
+        width: 100%;
+    }
+
+    .find_items_box .title_box p.line{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .find_items_box .title_box h3{
+        margin: 10px 0 0;
+        width: 100%;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .find_items_box .title_box p.caption{
+        margin: 20px 0 0;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+
+    .find_items_box .contents_box{
+        margin: 20px 0 0;
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between; */
+    }
+
+    .find_items_box .contents_box .left_contents{
+        /* 変数組み込み後Module化 */
+        width: 320px;
+        display: none;
+    }
+
+    .find_items_box .contents_box .right_contents ul{
+        margin: 20px auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .find_items_box .contents_box .right_contents ul li{
+        margin: 0;
+        width: 48.5%;
+        aspect-ratio: 1 / 0.656;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a{
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figure{
+        width: 100%;
+        aspect-ratio: 1 / 0.656;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figure img{
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption{
+        margin: 15px 0;
+        border-top: 2px solid #2d2d2d;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption h4{
+        margin: 15px 0 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information{
+        margin: 5px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information .price{
+        margin: 5px 0 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: block;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .item_information .price .tax{
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: block;
+        text-align: right;
+    }
+
+    .find_items_box .contents_box .right_contents ul li a figcaption .button{
+        width: 60px;
+        height: 35px;
+        color: #B1BF61;
+        font-size: 1.3rem;
+        font-weight: bold;
+        border: 2px solid #CBD97B;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*
+    ==============================
+    handcrafs_box
+    ==============================
+    */
+
+    .handcrafs_box{
+        margin: 70px auto 0;
+        width: 93%;
+        color: #fff;
+    }
+
+    .handcrafs_box a{
+        padding: 25px 40px;
+        width: 100%;
+        aspect-ratio: 1 / 0.5;
+        background-image:url(https://gigaplus.makeshop.jp/hcollection/assets/image/categories/hida-crafts/sp_banner.jpg);
+        background-repeat:  no-repeat;
+        background-position:center center;
+        background-size:cover;
+        border-radius: 8px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .handcrafs_box a .title{
+    }
+
+    .handcrafs_box a .title .line{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .handcrafs_box a .title h3{
+        margin: 0;
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+
+    .handcrafs_box a .caption{
+    }
+
+    .handcrafs_box a .caption .line{
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.75em;
+    }
+}

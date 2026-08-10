@@ -1,0 +1,19 @@
+<div class="header_box sp_header sp_only">
+    <div class="layout_box">
+        <div class="left_contents">
+            <a href="<{$url.top}>"><img src="https://gigaplus.makeshop.jp/hcollection/assets/image/logo.png"></a>
+        </div>
+        <div class="right_contents">
+            <p class="toggle--drawer__box">メニュー</p>
+        </div>
+    </div>
+</div>
+<div class="sp_head_contents sp_only">
+    <{if $latest_news.has_item}>
+        <{section name=i loop=$latest_news.list max=1}>
+            <a class="information_line_box" href="<{$latest_news.list[i].url}>">
+                <{$latest_news.list[i].date.year}>.<{$latest_news.list[i].date.month}>.<{$latest_news.list[i].date.day}> <{$latest_news.list[i].title}>
+            </a>
+        <{/section}>
+    <{/if}>
+</div>

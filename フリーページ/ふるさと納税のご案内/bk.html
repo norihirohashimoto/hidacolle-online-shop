@@ -1,0 +1,1501 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+<head>
+    <meta charset="utf-8">
+    <title>ふるさと納税のご案内 | ヒダコレ オンラインショップ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="飛騨,HIDA,家具,国産家具,オーダー家具,手仕事,クラフト,雑貨,ヒダコレ,高山" lang="ja">
+    <meta name="description" content="ふるさと納税でも買えるヒダコレの家具。ヒダコレの家具は店頭・オンラインショップだけではなく『ふるさと納税サイト』からもご購入いただけます。お取り扱いのある『ふるさと納税サイト』を家具毎にまとめております。">
+    <link rel="shortcut icon" type="image/ico" href="<{$shop.favicon_url}>">
+    <meta property="og:title" content="ふるさと納税のご案内 | ヒダコレ オンラインショップ">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ふるさと納税のご案内 | ヒダコレ オンラインショップ">
+    <meta property="og:description" content="ふるさと納税でも買えるヒダコレの家具。ヒダコレの家具は店頭・オンラインショップだけではなく『ふるさと納税サイト』からもご購入いただけます。お取り扱いのある『ふるさと納税サイト』を家具毎にまとめております。">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Module / Common head -->
+    <{$module.common_head}>
+
+    <!-- Module / CSS -->
+    <{$module.common_css}>
+
+        <style type="text/css">
+            @media screen and (min-width: 600px) {
+                .box__heading{
+                    width: 100%;
+                    height: 490px;
+                }
+
+                .box__heading .layout__heading{
+                    width: 100%;
+                    height: 100%;
+                    /* background-color: #000; */
+                    background-image: url("https://workspace.hidacolle.com/img/bg-image.jpg");
+                    background-size: cover;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px 0;
+                    position: relative;
+                    z-index: 0;
+                }
+
+                .box__heading .layout__heading::after {
+                    content: '';
+                    background-color: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    z-index: 1;
+                }
+
+                .box__heading .layout__heading h1{
+                    color: #fff;
+                    font-size: 5.6rem;
+                    font-weight: bold;
+                    z-index: 2;
+                }
+
+                .box__heading .layout__heading p.caption{
+                    color: #fff;
+                    font-size: 1.8rem;
+                    text-decoration: underline;
+                    z-index: 2;
+                }
+
+                .box__introduction .layout__introduction{
+                    margin: 150px auto 0;
+                    width: 1000px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .box__introduction .layout__introduction h2.heading{
+                    width: 320px;
+                    font-size: 3.2rem;
+                    font-weight: bold;
+                    line-height: 200%;
+                }
+
+                .box__introduction .layout__introduction .caption__introduction{
+                    margin: 10px 0 0;
+                    width: 660px;
+                    font-size: 1.6rem;
+                    line-height: 175%;
+                }
+
+                .box__introduction .layout__introduction .caption__introduction p{
+                    margin: 0 0 10px;
+                }
+
+                .box__handling{
+                    margin: 150px 0 0;
+                    width: 100%;
+                    height: 390px;
+                    background-color: #f1f1f1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .box__handling p.heading{
+                    color: #2D2D2D;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                }
+
+                .box__handling ul{
+                    margin: 35px 0 0;
+                    width: 1000px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0 20px;
+                }
+
+                .box__handling ul li{
+                    width: 320px;
+                    height: 68px;
+                    color: #2D2D2D;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    background-color: #E1E1E1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .box__caption-1{
+                    margin: 200px 0 0;
+                    text-align: center;
+                }
+
+                .box__caption-1 p{
+                    color: #2D2D2D;
+                    font-size: 1.6rem;
+                    text-decoration: underline;
+                }
+
+                .box__categories{
+                    margin: 150px auto 0;
+                    padding: 75px 0;
+                    width: 1000px;
+                    border-top: 2px solid #E1E1E1;
+                    border-bottom: 2px solid #E1E1E1;
+                    box-sizing: border-box;
+                }
+
+                .box__categories h2.heading{
+                    color: #2D2D2D;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .box__categories nav.nav-items{
+                    margin: 50px 0 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 20px 20px;
+                }
+
+                .box__categories nav.nav-items a{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 320px;
+                    height: 75px;
+                    border: 3px solid #2d2d2d;
+                    border-radius: 50px;
+                }
+
+                .box__categories nav.nav-items a:after {
+                    content: "";
+                    margin: 5px auto 0;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #2d2d2d;
+                    border-right: 2px solid #2d2d2d;
+                    position: relative;
+                    top: 0;
+                    transform: rotate(135deg);
+                    transition: all .2s ease;
+                }
+
+                .box__categories nav.nav-items a:hover:after {
+                    top: 5px;
+                }
+
+                .box__categories nav.nav-items a p.item{
+                    margin: 0 auto;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 100%;
+                    letter-spacing: .4px;
+                    line-height: 100%;
+                    text-align: center;
+                }
+                .box__items{
+                    margin: 150px auto 0;
+                    width: 1000px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 150px 0;
+                }
+
+                .box__items .items__block h2.heading{
+                    color: #2D2D2D;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .box__items .items__block .item__list{
+                    margin: 50px 0 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 75px 20px;
+                }
+
+                .box__items .items__block .item__list .item{
+                    margin: 0 0 20px;
+                    width: 320px;
+                }
+
+                .box__items .items__block .item__list .item{
+                    width: 320px;
+                    display: block;
+                    overflow: hidden;
+                }
+
+                .box__items .items__block .item__list .item .item_image{
+                    width: 320px;
+                    height: 210px;
+                }
+
+                .box__items .items__block .item__list .item .item_image img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                .box__items .items__block .item__list .item .item_body{
+                    margin: 15px 0;
+                    border-top: 2px solid #2d2d2d;
+                }
+
+                .box__items .items__block .item__list .item .item_body h2{
+                    margin: 15px 0 0;
+                    height: 65px;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    display: block;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information{
+                    margin: 35px 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px 0;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a{
+                    width: 245px;
+                    height: 40px;
+                    padding: 0 10px;
+                    color: #2D2D2D;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    background-color: #E1E1E1;
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    opacity: 1;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.2s ease;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a::after{
+                    content: url("");
+                    width: 15px;
+                    height: 15px;
+                    background-image: url("https://gigaplus.makeshop.jp/hcollection/assets/image/target-brank.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.2s ease;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a:hover{
+                    opacity: 0.6;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a:hover::after{
+                    top: -3px;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_minimum{
+                    margin: 20px 0 0;
+                    text-align: center;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_minimum a{
+                    color: #2D2D2D;
+                    font-size: 1.1rem;
+                    text-decoration: underline;
+                }
+            }
+
+            @media screen and (max-width : 599px) {
+                .box__heading{
+                    width: 100%;
+                    /* height: 490px; */
+                }
+
+                .box__heading .layout__heading{
+                    padding: 50px 50px;
+                    width: 100%;
+                    height: 100%;
+                    /* background-color: #000; */
+                    background-image: url("https://workspace.hidacolle.com/img/bg-image.jpg");
+                    background-size: cover;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px 0;
+                    position: relative;
+                    z-index: 0;
+                }
+
+                .box__heading .layout__heading::after {
+                    content: '';
+                    background-color: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    z-index: 1;
+                }
+
+                .box__heading .layout__heading h1{
+                    color: #fff;
+                    font-size: 2.6em;
+                    font-weight: bold;
+                    z-index: 2;
+                }
+
+                .box__heading .layout__heading p.caption{
+                    color: #fff;
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    z-index: 2;
+                }
+
+                .box__introduction .layout__introduction{
+                    margin: 70px auto 0;
+                    width: 93%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .box__introduction .layout__introduction h2.heading{
+                    width: 100%;
+                    font-size: 2.6rem;
+                    font-weight: bold;
+                    line-height: 200%;
+                }
+
+                .box__introduction .layout__introduction .caption__introduction{
+                    margin: 10px 0 0;
+                    width: 100%;
+                    font-size: 1.4rem;
+                    line-height: 175%;
+                }
+
+                .box__introduction .layout__introduction .caption__introduction p{
+                    margin: 0 0 10px;
+                }
+
+                .box__handling{
+                    margin: 150px 0 0;
+                    padding: 30px 0;
+                    width: 100%;
+                    background-color: #f1f1f1;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .box__handling p.heading{
+                    color: #2D2D2D;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+
+                .box__handling ul{
+                    margin: 25px 0 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px 0;
+                }
+
+                .box__handling ul li{
+                    width: 80%;
+                    height: 65px;
+                    color: #2D2D2D;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    background-color: #E1E1E1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .box__caption-1{
+                    margin: 75px auto 0;
+                    width: 95%;
+                    text-align: center;
+                }
+
+                .box__caption-1 p{
+                    color: #2D2D2D;
+                    font-size: 1.3rem;
+                    text-decoration: underline;
+                }
+
+                .box__categories{
+                    margin: 75px auto 0;
+                    padding: 75px 0;
+                    width: 100%;
+                    border-top: 2px solid #E1E1E1;
+                    border-bottom: 2px solid #E1E1E1;
+                    box-sizing: border-box;
+                }
+
+                .box__categories h2.heading{
+                    color: #2D2D2D;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .box__categories nav.nav-items{
+                    margin: 50px auto 0;
+                    width: 93%;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 10px 1%;
+                }
+
+                .box__categories nav.nav-items a{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 48%;
+                    height: 70px;
+                    border: 3px solid #2d2d2d;
+                    border-radius: 50px;
+                }
+
+                .box__categories nav.nav-items a:after {
+                    content: "";
+                    margin: 5px auto 0;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-top: 2px solid #2d2d2d;
+                    border-right: 2px solid #2d2d2d;
+                    position: relative;
+                    top: 0;
+                    transform: rotate(135deg);
+                    transition: all .2s ease;
+                }
+
+                .box__categories nav.nav-items a:hover:after {
+                    top: 5px;
+                }
+
+                .box__categories nav.nav-items a p.item{
+                    margin: 0 auto;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 100%;
+                    letter-spacing: .4px;
+                    line-height: 100%;
+                    text-align: center;
+                }
+                .box__items{
+                    margin: 75px auto 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px 0;
+                }
+
+                .box__items .items__block{
+                }
+
+                .box__items .items__block h2.heading{
+                    color: #2D2D2D;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .box__items .items__block .item__list{
+                    margin: 50px auto 0;
+                    width: 93%;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 75px 3%;
+                }
+
+                .box__items .items__block .item__list .item{
+                    margin: 0 0 20px;
+                    width: 48.5%;
+                }
+
+                .box__items .items__block .item__list .item{
+                    width: 100%;
+                    display: block;
+                    overflow: hidden;
+                }
+
+                .box__items .items__block .item__list .item .item_image{
+                    /* width: 320px;
+                    height: 210px; */
+                }
+
+                .box__items .items__block .item__list .item .item_image img{
+                    width: 100%;
+                    border-radius: 8px;
+                }
+
+                .box__items .items__block .item__list .item .item_body{
+                    margin: 15px 0;
+                    border-top: 2px solid #2d2d2d;
+                }
+
+                .box__items .items__block .item__list .item .item_body h2{
+                    margin: 15px 0 0;
+                    height: 65px;
+                    font-size: 2.1rem;
+                    font-weight: bold;
+                    display: block;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information{
+                    margin: 35px 0 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px 0;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a{
+                    width: 100%;
+                    height: 40px;
+                    padding: 0 10px;
+                    color: #2D2D2D;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    background-color: #E1E1E1;
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    opacity: 1;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.2s ease;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a::after{
+                    content: url("");
+                    width: 15px;
+                    height: 15px;
+                    background-image: url("https://gigaplus.makeshop.jp/hcollection/assets/image/target-brank.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    top: 0;
+                    transition: all 0.2s ease;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a:hover{
+                    opacity: 0.6;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_information a:hover::after{
+                    top: -3px;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_minimum{
+                    margin: 20px 0 0;
+                    text-align: center;
+                }
+
+                .box__items .items__block .item__list .item .item_body .item_minimum a{
+                    color: #2D2D2D;
+                    font-size: 1.1rem;
+                    text-decoration: underline;
+                }
+            }
+        </style>
+
+    <{$makeshop.head}>
+</head>
+
+<body id="<{$page.id}>">
+
+    <!-- Module / Common body -->
+    <{$module.common_body}>
+
+    <{$makeshop.body_top}>
+
+    <!-- Module / floating_button -->
+    <{$module.floating_button}>
+
+    <!-- Module / Header -->
+    <{$module.header}>
+
+    <!-- Module / SP Drawer -->
+    <{$module.sp_drawer}>
+
+    <!-- Module / SP Header -->
+    <{$module.sp_header}>
+
+        <div class="contents_body body__furusato-tax">
+
+            <div class="box__heading">
+                <div class="layout__heading">
+                    <h1>ふるさと納税のご案内</h1>
+                    <p class="caption">ヒダコレの家具がふるさと納税でもご購入いただけます</p>
+                </div>
+            </div>
+
+            <div class="box__introduction">
+                <div class="layout__introduction">
+                    <h2 class="heading">ふるさと納税サイト<br />からのご購入も<br />ぜひご検討下さい。</h2>
+                    <div class="caption__introduction">
+                        <p>ヒダコレの家具は店頭・オンラインショップだけではなく『ふるさと納税サイト』からもご購入いただけます。</p>
+                        <p>お取り扱いのある『ふるさと納税サイト』を家具毎にまとめております。</p>
+                        <p>日頃お使いの『ふるさと納税サイト』からぜひチェックしてみてください。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box__handling">
+                <p class="heading">お取り扱いのある『ふるさと納税サイト』</p>
+                <ul>
+                    <li>ふるなび</li>
+                    <li>楽天</li>
+                    <li>ふるさとチョイス</li>
+                </ul>
+            </div>
+
+            <div class="box__caption-1">
+                <!-- Add js text -->
+            </div>
+
+            <div class="box__categories">
+                <h2 class="heading">カテゴリーからさがす</h2>
+                <nav class="nav-items">
+                    <a href="#order_furniture_ticket"><p class="item">オーダー家具 利用券</p></a>
+                    <a href="#table"><p class="item">テーブル</p></a>
+                    <a href="#sidetable"><p class="item">サイドテーブル</p></a>
+                    <a href="#lowtable"><p class="item">ローテーブル</p></a>
+                    <a href="#desk"><p class="item">デスク</p></a>
+                    <a href="#shelf-rack"><p class="item">シェルフ・ラック</p></a>
+                    <a href="#interior"><p class="item">インテリア小物</p></a>
+                    <a href="#chair"><p class="item">椅子・チェア</p></a>
+                    <!-- <a href="#pet"><p class="item">ペットの家具</p></a> -->
+                </nav>
+            </div>
+
+            <div class="box__items">
+                <div id="order_furniture_ticket" class="items__block">
+                    <h2 class="heading">オーダー家具 利用券</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/shohin0.9.jpg" alt="オーダー家具 利用券 9千円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 9千円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1183145" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf019/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6148020?query_id=3ec3316f-a8ce-4bbc-a450-adbad871d7b6&ss_request_id=31eeaf02-a64a-45b5-9179-5dc1dc9bc34d" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/shohin3.jpg" alt="オーダー家具 利用券 3万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 3万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1183144" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf018/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6148019?query_id=3ec3316f-a8ce-4bbc-a450-adbad871d7b6&ss_request_id=31eeaf02-a64a-45b5-9179-5dc1dc9bc34d" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/order_furniture_ticket_6.jpg" alt="オーダー家具 利用券 6万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 6万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=949954" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf005/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5834187?query_id=2cf43681-3481-477f-a1e7-69afe11af84a" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/order_furniture_ticket_15.jpg" alt="オーダー家具 利用券 15万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 15万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=949955" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf006/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5834188?query_id=2cf43681-3481-477f-a1e7-69afe11af84a" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/order_furniture_ticket_30.jpg" alt="オーダー家具 利用券 30万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 30万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=949956" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf007/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5834189?query_id=2cf43681-3481-477f-a1e7-69afe11af84a" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/60_h.jpg" alt="オーダー家具 利用券 60万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 60万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=949957" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf008/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5834190?query_id=d3b66829-ccf1-416f-81bb-c3a9b6bc9c5f&ss_request_id=9bbaf53c-0954-4c93-b4d7-4908daf279f0" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/90_h.jpg" alt="オーダー家具 利用券 90万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 90万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=949958" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf009/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5834191?query_id=d3b66829-ccf1-416f-81bb-c3a9b6bc9c5f&ss_request_id=9bbaf53c-0954-4c93-b4d7-4908daf279f0" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/150_h.jpg" alt="オーダー家具 利用券 150万円分の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダー家具 利用券 150万円分</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1183146" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf020/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6148021?query_id=3ec3316f-a8ce-4bbc-a450-adbad871d7b6&ss_request_id=31eeaf02-a64a-45b5-9179-5dc1dc9bc34d" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="table" class="items__block">
+                    <h2 class="heading">テーブル</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/オーダーダイニングテーブル.jpg" alt="オーダーダイニングテーブルの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>オーダーダイニングテーブル</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=754114" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4521/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5631719" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/page/oder-tables">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidetable" class="items__block">
+                    <h2 class="heading">サイドテーブル</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/サイドテーブル.jpg" alt="無垢の木のサイドテーブルの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>無垢の木のサイドテーブル</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803449" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4350/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883173" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000098">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/サイドテーブル（鉄脚）.jpg" alt="アイアンサイドテーブルの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>アイアンサイドテーブル</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=632739" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4351/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883186" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000097">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lowtable" class="items__block">
+                    <h2 class="heading">ローテーブル</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/こたつ.jpg" alt="こたつの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>こたつ</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803439" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4178/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883168" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000162">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/こたつ（四角）.jpg" alt="こたつ（四角）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>こたつ（四角）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=661484" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4411/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5515287" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000170">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="desk" class="items__block">
+                    <h2 class="heading">デスク</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/コンソールデスク.jpg" alt="コンソールデスクの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>コンソールデスク W950</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=661407" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4410/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5515286" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000100">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/コンソールデスクW1345.jpg" alt="コンソールデスク(W1345)の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>コンソールデスク W1345</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=661575" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4412/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5515288" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000116">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/8_000000000099.jpg" alt="ワークデスク チェリー材 + アイアン脚の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ワークデスク チェリー材 + アイアン脚</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=985938" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf010/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5856266?query_id=4389e31d-8cb6-40ba-86bf-b1c9430ee933" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://www.hida-collection.shop/view/item/000000000099">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/ワークデスク-クルミ材-本棚兼用脚.jpg" alt="ワークデスク クルミ材 + 本棚兼用脚の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ワークデスク クルミ材 + 本棚兼用脚</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=985941" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf011/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5856268?query_id=4389e31d-8cb6-40ba-86bf-b1c9430ee933" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://www.hida-collection.shop/view/item/000000000117">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/kids_desk.jpg" alt="こどもデスク&スツールの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>こどもデスク&スツール</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1007825" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf013/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5899559?query_id=59b12729-6aa7-434f-826a-32e4bd5db831" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shelf-rack" class="items__block">
+                    <h2 class="heading">シェルフ・ラック・収納
+                    </h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/ハンガーラック-X型.jpg" alt="ハンガーラック X型の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ハンガーラック X型</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803441" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4179/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883169" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000103">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/衣桁.jpg" alt="衣桁 2連タイプの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>衣桁 2連タイプ</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=573784" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4180/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883170" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/category/ikoh">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/衣桁3連.jpg" alt="衣桁 3連タイプの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>衣桁 3連タイプ</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803429" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf002/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883190" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/category/ikoh">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/アイアンシェルフ.jpg" alt="アイアンシェルフの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>アイアンシェルフ B</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=632750" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4353/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5484064" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000101">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/桐箱-ナチュラル.jpg" alt="桐箱 ナチュラルの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>桐箱 ナチュラル</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803445" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4181/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883171" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000148">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/桐箱-墨柿渋.jpg" alt="桐箱 墨色の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>桐箱 墨色</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803447" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4182/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883172" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000148">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/杉の収納ボックス2個セット.jpg" alt="杉の収納ボックス2個セットの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>杉の収納ボックス2個セット</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=918532" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf004/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5800615" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="interior" class="items__block">
+                    <h2 class="heading">インテリア小物</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-1-min.jpg" alt="飛騨の天然木の掛け時計（横型）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>飛騨の天然木の掛け時計（横型）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=382056" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr3013/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883194" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000118">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-2-min.jpg" alt="飛騨の天然木の掛け時計（縦型）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>飛騨の天然木の掛け時計（縦型）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803457" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf042/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883158" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000169">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/姿見.jpg" alt="姿見の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>姿見</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803453" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr4352/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883156" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000105">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/ofda_bc.jpg" alt="お札立ての商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>お札立て</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1007821" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf012/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5899558?query_id=59b12729-6aa7-434f-826a-32e4bd5db831" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/IMG_0708-scaled.jpg" alt="ペンダントライトの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ペンダントライト</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803433" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf014/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883192" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/9_000000000056.jpg" alt="ティッシュボックス（BW）">
+                            </div>
+                            <div class="item_body">
+                                <h2>ティッシュボックス（BW）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1096068" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf015/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883193" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000056">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/2510-box_kurumi-min.jpg" alt="ティッシュボックス（胡桃）">
+                            </div>
+                            <div class="item_body">
+                                <h2>ティッシュボックス（胡桃）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803459" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf043/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883159" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000056">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-8-min-resize.jpg" alt="カッティングボードの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>カッティングボード</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1803455" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf038/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6883157" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="chair" class="items__block">
+                    <h2 class="heading">椅子・チェア</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-3-min.jpg" alt="3連スツール（クリ）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>3連スツール（クリ）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=382062" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr3012/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5156738" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-4-min.jpg" alt="3連スツール（クルミ）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>3連スツール（クルミ）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1613369" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf041/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6523308" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000113">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/2510-stool-min.jpg" alt="スツールの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>スツール</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1717792" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf044/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6737720" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/2510-highstool-min.jpg" alt="ハイスツールの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ハイスツール</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1717793" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf045/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6737721" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/2510-bench1200-min.jpg" alt="ベンチスツール（W1200）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ベンチスツール（W1200）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1717794" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf046/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6737722" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/2510-bench1500-min.jpg" alt="ベンチスツール（W1500）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ベンチスツール（W1500）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1717795" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf047/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6737723" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/HIDA-COLLECTION-ダイニングチェア-Mother-g196.jpg" alt="HIDA COLLECTION ダイニングチェア Mother g196の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>Mother （マザー）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=382065" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/g196/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5156737" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000161">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-5-min.jpg" alt="RAMS（チェリー）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>RAMS（チェリー）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=382063" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/tr3016/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5156740" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000168">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/RAMSBW.jpg" alt="RAMS（BW）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>RAMS（BW）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=918535" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf003/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5800614" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000167">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-6-min.jpg" alt="RAMS（オーク）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>RAMS（オーク）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1613368" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf040/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6523307" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000085">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/AUD.jpg" alt="AUDチェアの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>AUDチェア</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=918533" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf001/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5800611" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <div class="item_minimum">
+                                    <a href="https://hida-collection.shop/view/item/000000000160">オンラインショップでみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/250917-7-min.jpg" alt="IOチェアの商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>IOチェア</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1574420" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf039/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/6479354" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                                <!-- <div class="item_minimum">
+                                    <a href="">オンラインショップでみる</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="pet" class="items__block">
+                    <h2 class="heading">ペットの家具</h2>
+                    <div class="item__list">
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/IMG_0480補正c.jpg" alt="ペットソファー（クッション付）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ペットソファー（クッション付）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1096069" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf016/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5981423?query_id=6d20f656-b99b-44f2-ab30-d6e821267112" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item_image">
+                                <img src="https://workspace.hidacolle.com/img/IMG_0619b.jpg" alt="ペットソファー（フレーム）の商品画像です。">
+                            </div>
+                            <div class="item_body">
+                                <h2>ペットソファー（フレーム）</h2>
+                                <div class="item_information">
+                                    <a href="https://furunavi.jp/product_detail.aspx?pid=1096070" target="_blank" rel="noopener">『ふるなび』でみる</a>
+                                    <a href="https://item.rakuten.co.jp/f212032-takayama/gf017/" target="_blank" rel="noopener">『楽天』でみる</a>
+                                    <a href="https://www.furusato-tax.jp/product/detail/21203/5981424?query_id=6d20f656-b99b-44f2-ab30-d6e821267112" target="_blank" rel="noopener">『ふるさとチョイス』でみる</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Module / Footer -->
+            <{$module.footer}>
+
+        </div>
+
+    <!-- Module / Javascript -->
+    <{$module.common_js}>
+
+    <{$makeshop.body_bottom}>
+
+    <script>
+        $(function() {
+            var cnt = 0;
+
+            $(".item__list").each(function(index) {
+                cnt += $(this).find(".item").length;
+            });
+
+            var text = "<p>ふるさと納税に出品中の" + cnt + "商品を掲載しております</p>"
+
+            $(".box__caption-1").append(text);
+
+        });
+    </script>
+
+</body>
+
+</html>

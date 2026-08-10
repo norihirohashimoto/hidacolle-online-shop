@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+<meta charset="utf-8">
+<title><{$page.title}></title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="飛騨,HIDA,家具,国産家具,オーダー家具,手仕事,クラフト,雑貨,ヒダコレ,高山" lang="ja">
+<meta name="description" content="<{$page.description}>">
+<link rel="shortcut icon" type="image/ico" href="<{$shop.favicon_url}>">
+<meta property="og:title" content="<{$page.title}>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<{$page.title}>">
+<meta property="og:description" content="<{$page.description}>">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Module / Common head -->
+<{$module.common_head}>
+
+<!-- Module / CSS -->
+<{$module.common_css}>
+
+<{$makeshop.head}>
+</head>
+
+<body id="<{$page.id}>">
+
+    <!-- Module / Common body -->
+    <{$module.common_body}>
+
+    <{$makeshop.body_top}>
+
+    <!-- Module / floating_button -->
+    <{$module.floating_button}>
+
+    <!-- Module / Header -->
+    <{$module.header}>
+
+    <!-- Module / SP Drawer -->
+    <{$module.sp_drawer}>
+
+    <!-- Module / SP Header -->
+    <{$module.sp_header}>
+
+    <div class="contents_body">
+
+        <div class="breadcrumb_navigation_box">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="<{$url.top}>">
+                      <span itemprop="name">ホーム</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <!-- <a itemprop="item" href="<{$category.url}>"> -->
+                        <span itemprop="name">検索結果 : <{$search.keyword}>のアイテム</span>
+                    <!-- </a> -->
+                    <meta itemprop="position" content="2" />
+                </li>
+              </ol>
+        </div>
+
+        <div class="layout__box">
+            <div class="left_contents">
+                <p class="caption">飛騨の家具や工芸をみる</p>
+                <!-- Module / Categories -->
+                <{$module.side_categories}>
+            </div>
+            <div class="right_contents">
+
+
+                <!-- <{if $search.keyword}>
+                    <p>検索したキーワード : <{$search.keyword}></p>
+                <{/if}>
+                <{if $search.category.name}>
+                    <p>検索したカテゴリー名 : <{$search.category.name}></p>
+                <{/if}>
+                <{if $search.price_low || $search.price_high}>
+                    <p>検索した価格帯 : <{if $search.price_low}><{$search.price_low}>円<{/if}>～<{if $search.price_high}><{$search.price_high}>円<{/if}></p>
+                <{/if}>
+                <{if $search.original_code}>
+                    <p>検索した独自商品コード : <{$search.original_code}></p>
+                <{/if}>
+
+                <dl class="list-head-sort">
+                    <dt>並び替え：</dt>
+                    <dd><a href="<{$search.sort_low_price_url}>">価格の低い順</a></dd>
+                    <dd><a href="<{$search.sort_high_price_url}>">価格の高い順</a></dd>
+                    <dd><a href="<{$search.sort_recommend_url}>">おすすめ順</a></dd>
+                    <dd><a href="<{$search.sort_new_url}>">新着順</a></dd>
+                </dl> -->
+
+                <!--検索アイテム-->
+                <{if $search.item.has_item}>
+                    <div class="category_items empty_banner">
+                        <div class="title_box">
+                            <{if $search.keyword}>
+                                <h1><{$search.keyword}>のアイテム</h1>
+                            <{/if}>
+                        </div>
+                        <div class="items">
+                            <{section name=i loop=$search.item.list}>
+                                <div class="item">
+                                    <a href="<{$search.item.list[i].url}>">
+                                        <div class="item_iamge add_corner"><img src="<{$search.item.list[i].image_L}>" alt="<{$search.item.list[i].name}>"></div>
+                                        <div class="item_information">
+                                            <p class="item_name"><{$search.item.list[i].name}></p>
+                                            <div class="data">
+                                                <p class="price">&yen; <{$search.item.list[i].price|number_format}> <span class="tax">(税込)</span></p>
+                                                <p class="button">みる</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            <{/section}>
+                        </div>
+                    </div>
+
+                    <!--ページャー-->
+                    <!-- <div class="pager-wrap">
+                        <p class="total-count">（全<span><{$search.total_count}></span>件）<{$search.display_count}>件表示</p>
+                        <{if $search.pager.has_item}>
+                        <ul class="pager">
+                            <{if !$search.pager.is_first_display}>
+                                <li><a href="<{$search.pager.first_url}>"><span class="prev">一番前へ</span></a></li>
+                            <{/if}>
+
+                            <{section name=i loop=$search.pager.list}>
+                            <{if $search.pager.list[i].is_current_page}>
+                                <li><span class="current"><{$search.pager.list[i].number}></span></li>
+                            <{else}>
+                                <li><a href="<{$search.pager.list[i].url}>"><span><{$search.pager.list[i].number}></span></a></li>
+                            <{/if}>
+                            <{/section}>
+
+                            <{if !$search.pager.is_last_display}>
+                                <li><a href="<{$search.pager.last_url}>"><span class="next">最後へ</span></a></li>
+                            <{/if}>
+                        </ul>
+                        <{/if}>
+                    </div> -->
+
+                <{else}>
+                    <p class="empty">ご指定の条件に一致する商品が見つかりませんでした</p>
+                <{/if}>
+
+                
+
+
+
+            </div>
+        </div>
+
+        <!-- Module / Footer -->
+        <{$module.footer}>
+
+    </div>
+    <!-- Module / Javascript -->
+    <{$module.common_js}>
+
+    <{$makeshop.body_bottom}>
+</body>
+</html>
