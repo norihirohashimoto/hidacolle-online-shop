@@ -22,13 +22,13 @@
 
     .main_visual_box .left_contents .contents{
         width: 750px;
-        height: 506px;
+        height: 464px;
     }
 
     .main_visual_box .right_contents .contents{
         margin: 0 0 20px;
         width: 410px;
-        height: 243px;
+        height: 222px;
     }
 
     .main_visual_box .left_contents a,
@@ -1273,7 +1273,7 @@
 
     .main_visual_box .left_contents .contents{
         width: 100%;
-        aspect-ratio: 1 / 0.676;
+        aspect-ratio: 1 / 0.619;
     }
 
     .main_visual_box .right_contents{
